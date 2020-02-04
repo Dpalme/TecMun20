@@ -22,7 +22,14 @@ function body() {
 			under: under_title
 		},
 		links: sections
-	});
+    });
+    
+    document.getElementById("header").children[1].appendChild(
+        object({type: "nav", class: "row", children: [
+            object({type: "a", innerText: "English", href: "index.html"}),
+            object({type: "a", innerText: "Español", href: "es.html"}),
+        ]})
+    );
     start();
 	home();
 

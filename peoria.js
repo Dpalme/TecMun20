@@ -205,7 +205,7 @@ function header(options) {
     
     append("header", hamburger);
 	append("header", topDiv);
-	append("header", navLinks);
+    append("header", navLinks);
 }
 
 /** @typedef {{title?: string, links: string[]} footerOptions */
