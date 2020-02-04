@@ -12,9 +12,15 @@ const /** !List<string> */ sections = [
 		"contact"
 	];
 
+// Landing
+const greeting = "Welcome";
+const phrase_ = "Meet the new generation of students commited with quality education and excelence.";
+
+// Committees
+const title = "Committees";
 
 function body() {
-	header({
+	main({
 		logo: {
 			image: image_route,
 			main: main_title,
@@ -22,30 +28,13 @@ function body() {
 			under: under_title
 		},
 		links: sections
-    });
-    
-    document.getElementById("header").children[1].appendChild(
-        object({type: "nav", class: "row", children: [
-            object({type: "a", innerText: "English", href: "../en"}),
-            object({type: "text", innerText: "/"}),
-            object({type: "a", innerText: "Español", href: "../es"})
-        ]})
-    );
-    start();
+	});
+	
 	home();
-
-	//footer({ title: mainTag, links: footerLinks });
 }
 
 function home() {
-	clearContent();
-
-	objectToContent({ type: "h1", innerText: "Welcome" });
-	objectToContent({
-		type: "h2",
-		innerText:
-			"Meet the new generation of students commited with quality education and excelence."
-	});
+	landing({greet: greeting, phrase: phrase_})
 }
 
 function about() {
@@ -53,28 +42,7 @@ function about() {
 }
 
 function committees() {
-	clearContent();
-
-	objectToContent({ type: "h1", innerText: "Committees" });
-	gaContainer = object({
-		type: "div",
-		classList: "committee-container"
-	});
-	allCommittees.forEach(committee => {
-		gaContainer.appendChild(
-			object({
-				type: "div",
-				classList: "committee",
-				onclick: "viewCommittee('" + committee.seralize() + "')",
-				children: [
-					object({ type: "h2", innerText: committee.abreviation }),
-					object({ type: "h3", innerText: committee.name }),
-					object({ type: "p", innerText: committee.council })
-				]
-			})
-		);
-	});
-	append("content", gaContainer);
+	mainCommittees({title: title});
 }
 
 function viewCommittee(committee) {

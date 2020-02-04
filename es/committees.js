@@ -15,7 +15,7 @@ new Committee(
 );
 new Committee(
     "Cuarta Comisión",
-    "la Política Especial y de Descolonización",
+    "Política Especial y de Descolonización",
     "Asamblea General"
 );
 new Committee(
