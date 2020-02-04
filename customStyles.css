@@ -1,10 +1,21 @@
 .commitee {
     width: 15%;
     height: 10vw;
-    vertical-align: middle;
-    line-height: 10vw;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 0 .5rem;
-    background-color: tomato;
+    background-color: var(--accent2);
     cursor: pointer;
+}
+
+.commitee h2 {
+    font-size: 2rem;
+    margin: 20% 0 0 0;
+}
+
+.commitee h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    width: 80%;
 }
