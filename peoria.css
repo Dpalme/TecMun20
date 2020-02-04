@@ -30,10 +30,10 @@
 */
 
 :root {
-	--bg: #121212;
-	--bg2: #060606;
-	--bg3: #181818;
-	--font: #eaeaea;
+	--bg: #eaeaea;
+	--bg2: #c8c8c8;
+	--bg3: #aeaeae;
+	--font: #121212;
 	--accent: #1D54B9;
 	--accent2: #1DB954;
 	--font-face: 'Roboto', Arial, Helvetica, sans-serif;
