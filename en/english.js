@@ -1,5 +1,5 @@
 // Header
-const /** !string */ image_route = "blacklogo.png";
+const /** !string */ image_route = "../img/blacklogo.png";
 const /** !string */ main_title = "TEC";
 const /** !string */ secondary_title = "MUN";
 const /** !string */ under_title = "XXXIV | April, 2020";
