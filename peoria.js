@@ -6,32 +6,15 @@
  * a website and streamlines a lot of time heavy tasks.
  */
 
-/** 
+/**
  * Options type for creating an element.
- * @typedef {Object} Options
- * @property {string=} type - The element type.
- * @property {string=} classList - The complete class list attribute.
- * @property {string=} innerText - The element's inner text.
- * @property {*=} onclick - The value of the element's onclick attribute.
- * @property {string=} src - The value of the element's src attribute.
- * @property {string=} style - The value of the element's style attribute.
- * @property {string=} tabindex - The value of the element's tabindex attribute.
- * @property {string=} id - The value of the element's id attribute.
+ * @typedef {{type: string, classList?: string, innerText?: string, onclick?: any, src?: string, style?: string, tabindex?: string, id?: string}} Options
  */
-
- /** 
- * Options type for creating an element.
- * @typedef {Object} headerOptions
- * @property {{image?: string, main: string, secondary?: string, under?: string}} logo - The element type.
- * @property {string[]} links - The value of the element's id attribute.
- */
-
-/** @typedef {{title: string, titles: string[]}} footerOptions */
 
 /**
- * Function to create an object in Peoria.
+ * Peoria function to create an Element.
  *
- * @param {Options} options Any and all settings are optional.
+ * @param {Options} options - Configuration for element.
  *
  * @returns {Element} The created element.
  *
@@ -158,10 +141,14 @@ function start() {
 	document.body.appendChild(object({ type: "footer", id: "footer" }));
 }
 
+/**
+ * Options type for creating an element.
+ * @typedef {{logo: {image?: string, main: string, secondary?: string, under?: string}, links: string[]}} headerOptions
+ */
 
 /**
  * Creates a header on the <header> element.
- * @param {headerOptions} options 
+ * @param {headerOptions} options
  */
 function header(options) {
 	// Hamburger
@@ -176,9 +163,11 @@ function header(options) {
 
 	// Logo
 	topDiv = object({ type: "div", classList: "topDiv" });
+
 	if (options.logo.image !== undefined)
 		topDiv.appendChild(object({ type: "img", src: "blacklogo.png" }));
 	span = object({ type: "span", classList: "collumn" });
+
 	if (options.logo.main !== undefined) {
 		logo = object({
 			type: "a",
@@ -194,7 +183,8 @@ function header(options) {
 				})
 			);
 		span.appendChild(logo);
-    }
+	}
+
 	topDiv.append(span);
 	if (options.logo.under !== undefined)
 		span.appendChild(object({ type: "h3", innerText: options.logo.under }));
@@ -211,13 +201,17 @@ function header(options) {
 	append("header", navLinks);
 }
 
+/** @typedef {{title?: string, titles: string[]}} footerOptions */
+
 /**
  * Creates a footer on the <footer> element.
- * @param {footerOptions} options 
+ * @param {footerOptions} options
  */
 function footer(options) {
-    append("footer", object({type: "h2", innerText: options.title}));
+	if(options.title !== undefined) append("footer", object({ type: "h2", innerText: options.title }));
+    
     mainDiv = object({ type: "div", classList: "row" });
+    
 	for (title in options.titles) {
 		col = object({ type: "div", classList: "column" });
 		col.appendChild(object({ type: "h3", innerText: title }));
@@ -229,7 +223,8 @@ function footer(options) {
 		}
 		col.appendChild(span);
 		mainDiv.appendChild(col);
-	}
+    }
+    
 	append("footer", mainDiv);
 }
 
