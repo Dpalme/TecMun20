@@ -1,7 +1,25 @@
 /* PEORIA 02.01.2020 */
 /* Diego Palmerin Bonada */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+@font-face {
+	font-family: "Gotham";
+	src: url("gotham/GothamBook.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("gotham/GothamBook.woff")
+			format("woff"),
+		/* Pretty Modern Browsers */ url("gotham/GothamBook.ttf")
+			format("truetype"); /* Safari, Android, iOS */
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Gotham";
+	src: url("gotham/Gotham-Light.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("gotham/Gotham-Light.woff")
+			format("woff"),
+		/* Pretty Modern Browsers */ url("gotham/Gotham-Light.ttf")
+			format("truetype"); /* Safari, Android, iOS */
+	font-weight: normal;
+}
 
 /* Global Variables */
 
@@ -30,13 +48,13 @@
 */
 
 :root {
-	--bg: #eaeaea;
-	--bg2: #c8c8c8;
-	--bg3: #aeaeae;
-	--font: #121212;
-	--accent: #1D54B9;
-	--accent2: #1DB954;
-	--font-face: 'Roboto', Arial, Helvetica, sans-serif;
+	--bg: #fff;
+	--bg2: #5C7378;
+	--bg3: #A36F9F;
+	--font: #0B2141;
+	--accent: #F99D2A;
+	--accent2: #CAB898;
+	--font-face: 'Gotham', Arial, Helvetica, sans-serif;
 }
 
 /* Start of Style Sheet */
@@ -61,7 +79,7 @@ body {
 
 h1 {
 	color: var(--accent);
-	font-weight: 100;
+	font-weight: bold;
 	font-size: 7rem;
 	margin: 3rem auto;
 }
