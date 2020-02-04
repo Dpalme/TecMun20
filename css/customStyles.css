@@ -8,12 +8,14 @@ nav a {
 }
 
 .committee {
-    width: 18rem;
-    height: 10rem;
+    min-width: 20rem;
+    max-width: 25rem;
+    height: 12rem;
+    width: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: .2rem;
+    margin: .4rem auto;
     border: solid 1px var(--accent);
     background: linear-gradient(to right, var(--accent) 65%, transparent 65%);
     background-size: 300% 100%;
