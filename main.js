@@ -59,17 +59,17 @@ function committees() {
 	objectToContent({ type: "h1", innerText: "General Assembly" });
 	gaContainer = object({
 		type: "div",
-		style: "display: flex; flex-direction:row; flex-wrap: wrap;"
+		classList: "committee-container"
 	});
-	general_assembly.forEach(commitee => {
+	general_assembly.forEach(committee => {
 		gaContainer.appendChild(
 			object({
 				type: "div",
-				classList: "commitee",
-				onclick: "viewCommitee('" + commitee.seralize() + "')",
+				classList: "committee",
+				onclick: "viewCommittee('" + committee.seralize() + "')",
 				children: [
-					object({ type: "h2", innerText: commitee.abreviation }),
-					object({ type: "h3", innerText: commitee.name })
+					object({ type: "h2", innerText: committee.abreviation }),
+					object({ type: "h3", innerText: committee.name })
 				]
 			})
 		);
@@ -77,10 +77,10 @@ function committees() {
 	append("content", gaContainer);
 }
 
-function viewCommitee(commitee) {
+function viewCommittee(committee) {
 	clearContent();
-    information = commitee.split(",");
-    objectToContent({type: "div", classList: "commitee-page", children: [
+    information = committee.split(",");
+    objectToContent({type: "div", classList: "committee-page", children: [
     object({ type: "h2", innerText: information[0] }),
 	object({ type: "h3", innerText: information[1] }),
 	object({ type: "h4", innerText: "Type: " + information[2] })]

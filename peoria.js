@@ -98,7 +98,7 @@ function createFooterOption(text) {
 		object({
 			type: "a",
 			innerText: "- " + text,
-			onclick: text + "()",
+			onclick:  "viewCommittee('" + text + "')",
 			tabindex: "0"
 		})
 	);
@@ -204,7 +204,7 @@ function header(options) {
 	append("header", navLinks);
 }
 
-/** @typedef {{title?: string, titles: string[]}} footerOptions */
+/** @typedef {{title?: string, titles: {string: string[]}} footerOptions */
 
 /**
  * Creates a footer on the <footer> element.
