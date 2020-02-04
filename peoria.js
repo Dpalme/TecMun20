@@ -8,7 +8,7 @@
 
 /**
  * Options type for creating an element.
- * @typedef {{type: string, classList?: string, innerText?: string, onclick?: any, src?: string, style?: string, tabindex?: string, id?: string}} Options
+ * @typedef {{type: string, classList?: string, innerText?: string, onclick?: string, src?: string, style?: string, tabindex?: string, id?: string}} Options
  */
 
 /**
@@ -25,8 +25,7 @@ function object(options) {
 	if (options.classList !== undefined) htmlObject.classList = options.classList;
 	if (options.innerText !== undefined) htmlObject.innerText = options.innerText;
 	if (options.href !== undefined) htmlObject.setAttribute("href", options.href);
-	if (options.onclick !== undefined)
-		htmlObject.setAttribute("onclick", options.onclick);
+	if (options.onclick !== undefined) htmlObject.setAttribute("onclick", options.onclick);
 	if (options.src !== undefined) htmlObject.setAttribute("src", options.src);
 	if (options.style !== undefined)
 		htmlObject.setAttribute("style", options.style);

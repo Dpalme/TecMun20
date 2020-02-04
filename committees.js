@@ -1,10 +1,14 @@
-/** Class representing a commitee. */
+/** Class representing a commitee.
+ * @property {string} type - The type of commitee.
+ * @property {string} name - The full name of the commitee,
+ * @property {string} abreviation - The abreviated name of the commitee
+ */
 class Commitee {
 	/**
      * Create a Commitee.
-	 * @param {number} type 0 = General Assembly, 1 = Special Committees, 2 = Crisis Committees
-	 * @param {string} name The full name of the commitee.
-	 * @param {string} abreviation The abreviated name of the commitee.
+	 * @param {number} type - 0 = General Assembly, 1 = Special Committees, 2 = Crisis Committees
+	 * @param {string} name - The full name of the commitee.
+	 * @param {string} abreviation - The abreviated name of the commitee.
 	 */
 	constructor(type, abreviation, name) {
 		if (type == 0) this.type = "General Assembly";
@@ -23,7 +27,8 @@ Commitee.prototype.toString = function() {
 	return this.abreviation;
 };
 
-committees = [
+/** @type {Commitee[]} */ 
+var committees = [
 	new Commitee(0, "SPAG", "Sesión Plenaria de la Asamblea General"),
 	new Commitee(
 		0,
@@ -67,9 +72,13 @@ committees = [
 	new Commitee(2, "ICC", "International Criminal Court")
 ];
 
-general_assembly = [];
-special_committees = [];
-crisis_committees = [];
+/** @type {Commitee[]} */ 
+var general_assembly = [];
+/** @type {Commitee[]} */ 
+var special_committees = [];
+
+/** @type {Commitee[]} */ 
+var crisis_committees = [];
 
 committees.forEach(commitee => {
 	if (commitee.type == "General Assembly") {
