@@ -20,9 +20,6 @@ const /** !Object<string, List<any>> */ titles_tags = {
 		"Crisis Committees": crisis_committees
 	};
 
-/** @type {Commitee} */ 
-var currentCommitee;
-
 function body() {
 	start();
 
@@ -60,26 +57,35 @@ function committees() {
 	clearContent();
 
 	objectToContent({ type: "h1", innerText: "General Assembly" });
-	container = object({
+	gaContainer = object({
 		type: "div",
 		style: "display: flex; flex-direction:row; flex-wrap: wrap;"
 	});
 	general_assembly.forEach(commitee => {
-		container.appendChild(
+		gaContainer.appendChild(
 			object({
 				type: "div",
-				innerText: commitee.abreviation,
 				classList: "commitee",
-				onclick: "updateCommitee(" + commitee.abreviation +")"
+				onclick: "viewCommitee('" + commitee.seralize() + "')",
+				children: [
+					object({ type: "h2", innerText: commitee.abreviation }),
+					object({ type: "h3", innerText: commitee.name })
+				]
 			})
 		);
 	});
-	append("content", container);
+	append("content", gaContainer);
 }
 
 function viewCommitee(commitee) {
 	clearContent();
-	objectToContent({ type: "h2", innerText: currentCommitee.name });
+    information = commitee.split(",");
+    objectToContent({type: "div", classList: "commitee-page", children: [
+    object({ type: "h2", innerText: information[0] }),
+	object({ type: "h3", innerText: information[1] }),
+	object({ type: "h4", innerText: "Type: " + information[2] })]
+})
+	
 }
 
 function archive() {
@@ -88,9 +94,4 @@ function archive() {
 
 function contact() {
 	clearContent();
-}
-
-
-function updateCommitee(commitee){
-    comm
 }
