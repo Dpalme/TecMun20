@@ -35,4 +35,4 @@ Committee.prototype.toString = function() {
 };
 
 /** @type {Committee[]} */
-var allCommittees = [];
+let allCommittees = [];

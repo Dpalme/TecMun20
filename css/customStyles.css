@@ -14,8 +14,16 @@ nav a {
     flex-direction: column;
     text-align: center;
     margin: .2rem;
-    background-color: var(--accent2);
+    border: solid 1px var(--accent);
+    background: linear-gradient(to right, var(--accent) 65%, transparent 65%);
+    background-size: 300% 100%;
+    background-position:right bottom;
+	transition:all .5s ease-in;
     cursor: pointer;
+}
+
+.committee:hover {
+    background-position: left bottom;
 }
 
 .committee h2 {
@@ -26,8 +34,13 @@ nav a {
 .committee h3 {
     font-size: 1.4rem;
     font-weight: 400;
-    margin: 0 auto auto auto;
+    margin: auto;
     width: 80%;
+}
+
+.committee p {
+    text-align: center;
+    font-size: .8rem;
 }
 
 .committee-container{

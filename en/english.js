@@ -26,7 +26,7 @@ function body() {
     
     document.getElementById("header").children[1].appendChild(
         object({type: "nav", class: "row", children: [
-            object({type: "a", innerText: "English", href: "./"}),
+            object({type: "a", innerText: "English", href: "../en"}),
             object({type: "text", innerText: "/"}),
             object({type: "a", innerText: "Español", href: "../es"})
         ]})
@@ -68,7 +68,8 @@ function committees() {
 				onclick: "viewCommittee('" + committee.seralize() + "')",
 				children: [
 					object({ type: "h2", innerText: committee.abreviation }),
-                    object({ type: "h3", innerText: committee.name })
+					object({ type: "h3", innerText: committee.name }),
+					object({ type: "p", innerText: committee.council })
 				]
 			})
 		);
