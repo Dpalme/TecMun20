@@ -1,29 +1,24 @@
 .committee {
-    width: 15%;
-    height: 10vw;
+    width: 18rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 auto;
+    margin: .2rem;
     background-color: var(--accent2);
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
 }
 
 .committee h2 {
     font-size: 2rem;
-    height: 40%;
-    margin: 0;
-    align-items: center;
+    margin: 5% auto auto auto;
 }
 
 .committee h3 {
-    font-size: .8rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    margin: 0 auto 10% auto;
+    margin: 0 auto auto auto;
     width: 80%;
-    height: 60%;
 }
 
 .committee-container{
@@ -31,6 +26,4 @@
     flex-direction:row;
     flex-wrap: wrap;
     margin: auto;
-    justify-content: center;
-    align-items: center;
 }
