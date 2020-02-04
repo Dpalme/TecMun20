@@ -1,34 +1,34 @@
 new Committee(
-	"DISEC",
-	"Disarmament and International Security",
-	"General Assembly"
+	"Primera Comisión",
+	"Comisión de Desarme y Seguridad Internacional",
+	"Asamblea General"
 );
 new Committee(
-    "ECOFIN",
-    "Economic and Financial",
-    "General Assembly"
+    "Segunda Comisión",
+    "Comisión de Asuntos Económicos, Financieros, Ambientales y de Desarrollo",
+    "Asamblea General"
 );
 new Committee(
-    "SOCHUM",
-    "Social, Humanitarian & Cultural",
-    "General Assembly"
+    "Tercera Comisión",
+    "Comisión de Asuntos Sociales, Humanitarios y Culturales",
+    "Asamblea General"
 );
 new Committee(
-    "SPECPOL",
-    "Special Political & Decolonization",
-    "General Assembly"
+    "Cuarta Comisión",
+    "Comisión de la Política Especial y de Descolonización",
+    "Asamblea General"
 );
 new Committee(
-    "Fifth Committee",
-    "Administrative & Budgetary",
-    "General Assembly"
+    "Quinta Comisión",
+    "Comisión de Asuntos Administrativos y de Presupuesto",
+    "Asamblea General"
 );
-new Committee("Sixth Committee", "Legal", "General Assembly");
-new Committee("CTC", "Counter-Terrorism Committee", "Security Council");
-new Committee("1540", "Non-Proliferation Committee", "Security Council");
+new Committee("Sexta Comisión", "Comisión Jurídica", "Asamblea General");
+new Committee("CTC", "Counter-Terrorism Comisión", "Security Council");
+new Committee("1540", "Non-Proliferation Comisión", "Security Council");
 new Committee(
     "MSC",
-    "United Nations Military Staff Committee",
+    "United Nations Military Staff Comisión",
     "Security Council"
 );
 new Committee("Sanctions", "Sanctions Committees", "Security Council");
@@ -60,7 +60,7 @@ var special_committees = [];
 var crisis_committees = [];
 
 allCommittees.forEach(committee => {
-	if (committee.type == "General Assembly") {
+	if (committee.type == "Asamblea General") {
 		general_assembly.push(committee);
 	}
 	if (committee.type == "Special Committees") {

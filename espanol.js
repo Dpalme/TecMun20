@@ -2,14 +2,14 @@
 const /** !string */ image_route = "blacklogo.png";
 const /** !string */ main_title = "TEC";
 const /** !string */ secondary_title = "MUN";
-const /** !string */ under_title = "XXXIV | April, 2020";
+const /** !string */ under_title = "XXXIV | Abril, 2020";
 
 const /** !List<string> */ sections = [
-		"home",
-		"about",
-		"committees",
-		"archive",
-		"contact"
+		"inicio",
+		"nosotros",
+		"comités",
+		"archivo",
+		"contacto"
 	];
 
 
@@ -32,30 +32,30 @@ function body() {
         ]})
     );
     start();
-	home();
+	inicio();
 
 	//footer({ title: mainTag, links: footerLinks });
 }
 
-function home() {
+function inicio() {
 	clearContent();
 
-	objectToContent({ type: "h1", innerText: "Welcome" });
+	objectToContent({ type: "h1", innerText: "Bienvenid@" });
 	objectToContent({
 		type: "h2",
 		innerText:
-			"Meet the new generation of students commited with quality education and excelence."
+            "Conoce a la nueva generación de estudiantes comprometidos con la educación de calidad y excelencia."    
 	});
 }
 
-function about() {
+function nosotros() {
 	clearContent();
 }
 
-function committees() {
+function comités() {
 	clearContent();
 
-	objectToContent({ type: "h1", innerText: "Committees" });
+	objectToContent({ type: "h1", innerText: "Comités" });
 	gaContainer = object({
 		type: "div",
 		classList: "committee-container"
@@ -87,10 +87,10 @@ function viewCommittee(committee) {
 	
 }
 
-function archive() {
+function archivo() {
 	clearContent();
 }
 
-function contact() {
+function contacto() {
 	clearContent();
 }
