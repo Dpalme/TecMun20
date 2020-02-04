@@ -17,6 +17,18 @@
 }
 */
 
+/* DARK MODE
+:root {
+	--bg: #121212;
+	--bg2: #060606;
+	--bg3: #181818;
+	--font: #eaeaea;
+	--accent: #1D54B9;
+	--accent2: #1DB954;
+	--font-face: 'Roboto', Arial, Helvetica, sans-serif;
+}
+*/
+
 :root {
 	--bg: #121212;
 	--bg2: #060606;
@@ -50,7 +62,7 @@ h1 {
 	color: var(--accent);
 	font-weight: 100;
 	font-size: 7rem;
-	margin: 0.2vw auto 0.2vw 5vw;
+	margin: 3rem auto;
 }
 
 h2 {
