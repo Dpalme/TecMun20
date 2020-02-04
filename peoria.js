@@ -6,23 +6,34 @@
  * a website and streamlines a lot of time heavy tasks.
  */
 
-/** @typedef {?Object<var, var>} options */
+/** 
+ * Options type for creating an element.
+ * @typedef {Object} Options
+ * @property {string=} type - The element type.
+ * @property {string=} classList - The complete class list attribute.
+ * @property {string=} innerText - The element's inner text.
+ * @property {*=} onclick - The value of the element's onclick attribute.
+ * @property {string=} src - The value of the element's src attribute.
+ * @property {string=} style - The value of the element's style attribute.
+ * @property {string=} tabindex - The value of the element's tabindex attribute.
+ * @property {string=} id - The value of the element's id attribute.
+ */
+
+ /** 
+ * Options type for creating an element.
+ * @typedef {Object} headerOptions
+ * @property {{image?: string, main: string, secondary?: string, under?: string}} logo - The element type.
+ * @property {string[]} links - The value of the element's id attribute.
+ */
+
+/** @typedef {{title: string, titles: string[]}} footerOptions */
 
 /**
  * Function to create an object in Peoria.
  *
- * @param {?Object<any, any>} options with any of the following settings:
- *     - type: the type of html element. : string
- *     - classList: the class list for the html element : string
- *     - innerText: the inner text of the html element : string
- *     - href: href attribute of the html element : string
- *     - onclick: onclick attribute of the html element : string
- *     - src: src attribute of the html element : string
- *     - style: style attribute of the html element : string
- *     - tabindex: the value of the tabindex attribute : string
- *     - id: the value of the id attribute : string
+ * @param {Options} options Any and all settings are optional.
  *
- * @returns {Object} The html element.
+ * @returns {Element} The created element.
  *
  * @example object({type: "h3", innerText: "This is neat!"})
  */
@@ -45,18 +56,9 @@ function object(options) {
 /**
  * Function to create a link that opens in a new tab in Peoria.
  *
- * @param {Options} options with any of the following settings (optional):
- *     - type: the type of html element. : string
- *     - classList: the class list for the html element : string
- *     - innerText: the inner text of the html element : string
- *     - href: href attribute of the html element : string
- *     - onclick: onclick attribute of the html element : string
- *     - src: src attribute of the html element : string
- *     - style: style attribute of the html element : string
- *     - tabindex: the value of the tabindex attribute : string
- *     - id: the value of the id attribute : string
+ * @param {options} options Any and all settings are optional.
  *
- * @returns the html element.
+ * @returns {Element} The created element.
  *
  * @example link({type: "a", href: "https://www.google.com", innerText: "Use Cammel Case!"});
  */
@@ -69,8 +71,8 @@ function link(options) {
 /**
  * Function to append as a child an element to another one given it's id.
  *
- * @param {string} parent the id of the parent object.
- * @param {object} child the child object.
+ * @param {string} parent The id of the parent object.
+ * @param {object} child The child object.
  *
  * @example append("header", headerObject);
  */
@@ -82,7 +84,7 @@ function append(parent, child) {
  * Function that creates a li element with an <a> tag inside of it.
  *
  * @param {string} text the text to put on the element.
- * @returns {li} li element
+ * @returns {Element} <li><a></a></li> element
  */
 function createHeaderOption(text) {
 	li = object({ type: "li" });
@@ -102,7 +104,7 @@ function createHeaderOption(text) {
  * Function that creates a li element with an <a> tag inside of it.
  *
  * @param {string} text the text to put on the element.
- * @returns li element
+ * @returns {Element} <li><a></a></li> element
  */
 function createFooterOption(text) {
 	li = object({ type: "li" });
@@ -128,24 +130,24 @@ function clearContent() {
 /**
  * Adds an element to the body.
  *
- * @param {Object} object Object to append to content.
+ * @param {Element} element Object to append to content.
  */
-function addToContent(object) {
-	document.getElementById("content").appendChild(object);
+function addToContent(element) {
+	document.getElementById("content").appendChild(element);
 }
 
 /**
  * Creates an element and adds it to the content.
  *
- * @param {Object} object Object to append to content.
+ * @param {options} options Object to append to content.
  */
-function objectToContent(options){
-    addToContent(object(options));
+function objectToContent(options) {
+	addToContent(object(options));
 }
 
 /**
  * Adds the following elements to the body:
- * 
+ *
  *  - <header id="header"></header>
  *  - <main id "content"></main>.
  *  - <footer id "footer"></footer>.
@@ -156,6 +158,11 @@ function start() {
 	document.body.appendChild(object({ type: "footer", id: "footer" }));
 }
 
+
+/**
+ * Creates a header on the <header> element.
+ * @param {headerOptions} options 
+ */
 function header(options) {
 	// Hamburger
 	hamburger = object({
@@ -187,7 +194,7 @@ function header(options) {
 				})
 			);
 		span.appendChild(logo);
-	}
+    }
 	topDiv.append(span);
 	if (options.logo.under !== undefined)
 		span.appendChild(object({ type: "h3", innerText: options.logo.under }));
@@ -204,22 +211,27 @@ function header(options) {
 	append("header", navLinks);
 }
 
+/**
+ * Creates a footer on the <footer> element.
+ * @param {footerOptions} options 
+ */
 function footer(options) {
-	mainDiv = object({ type: "div", classList: "row" });
+    append("footer", object({type: "h2", innerText: options.title}));
+    mainDiv = object({ type: "div", classList: "row" });
 	for (title in options.titles) {
 		col = object({ type: "div", classList: "column" });
-        col.appendChild(object({ type: "h3", innerText: title }));
-        span = object({type: "span"});
+		col.appendChild(object({ type: "h3", innerText: title }));
+		span = object({ type: "span" });
 		if (options.titles.hasOwnProperty(title)) {
 			options.titles[title].forEach(listLink => {
 				span.appendChild(createFooterOption(listLink));
 			});
-        }
-        col.appendChild(span);
+		}
+		col.appendChild(span);
 		mainDiv.appendChild(col);
 	}
 	append("footer", mainDiv);
 }
 
-
-document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=Lax";
+document.cookie =
+	"AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=Lax";
