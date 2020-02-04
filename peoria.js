@@ -8,7 +8,7 @@
 
 /**
  * Options type for creating an element.
- * @typedef {{type: string, classList?: string, innerText?: string, onclick?: string, src?: string, style?: string, tabindex?: string, id?: string}} Options
+ * @typedef {{type: string, classList?: string, innerText?: string, onclick?: string, src?: string, style?: string, tabindex?: string, id?: string, child?: Element, children?: Element[]}} Options
  */
 
 /**
@@ -31,14 +31,18 @@ function object(options) {
 		htmlObject.setAttribute("style", options.style);
 	if (options.tabindex !== undefined)
 		htmlObject.setAttribute("tabindex", options.tabindex);
-	if (options.id !== undefined) htmlObject.setAttribute("id", options.id);
+    if (options.id !== undefined) htmlObject.setAttribute("id", options.id);
+    if (options.child !== undefined) htmlObject.appendChild(options.child);
+    if (options.children !== undefined) options.children.forEach(child => {
+        htmlObject.appendChild(child);
+    });
 	return htmlObject;
 }
 
 /**
  * Function to create a link that opens in a new tab in Peoria.
  *
- * @param {options} options Any and all settings are optional.
+ * @param {Options} options Any and all settings are optional.
  *
  * @returns {Element} The created element.
  *
@@ -121,7 +125,7 @@ function addToContent(element) {
 /**
  * Creates an element and adds it to the content.
  *
- * @param {options} options Object to append to content.
+ * @param {Options} options Object to append to content.
  */
 function objectToContent(options) {
 	addToContent(object(options));
