@@ -16,7 +16,15 @@ class Commitee {
 		if (type == 2) this.type = "Crisis Committees";
 		this.name = name;
 		this.abreviation = abreviation;
-	}
+    }
+    
+    /**
+     * Returns a string that represents the commitee in a parsable friendly way
+	 * @return {string}
+	 */
+    seralize(){
+        return this.abreviation + "," + this.name + "," + this.type;
+    }
 }
 
 /** 
