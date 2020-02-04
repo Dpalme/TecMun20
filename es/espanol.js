@@ -1,5 +1,5 @@
 // Header
-const /** !string */ image_route = "blacklogo.png";
+const /** !string */ image_route = "../img/blacklogo.png";
 const /** !string */ main_title = "TEC";
 const /** !string */ secondary_title = "MUN";
 const /** !string */ under_title = "XXXIV | Abril, 2020";
@@ -26,9 +26,9 @@ function body() {
     
     document.getElementById("header").children[1].appendChild(
         object({type: "nav", class: "row", children: [
-            object({type: "a", innerText: "English", href: "./"}),
+            object({type: "a", innerText: "English", href: "../"}),
             object({type: "text", innerText: "/"}),
-            object({type: "a", innerText: "Español", href: "es.html"})
+            object({type: "a", innerText: "Español", href: "./"})
         ]})
     );
     start();

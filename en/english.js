@@ -28,7 +28,7 @@ function body() {
         object({type: "nav", class: "row", children: [
             object({type: "a", innerText: "English", href: "./"}),
             object({type: "text", innerText: "/"}),
-            object({type: "a", innerText: "Español", href: "es.html"})
+            object({type: "a", innerText: "Español", href: "es"})
         ]})
     );
     start();
