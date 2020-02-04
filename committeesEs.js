@@ -1,26 +1,26 @@
 new Committee(
 	"Primera Comisión",
-	"Comisión de Desarme y Seguridad Internacional",
+	"Desarme y Seguridad Internacional",
 	"Asamblea General"
 );
 new Committee(
     "Segunda Comisión",
-    "Comisión de Asuntos Económicos, Financieros, Ambientales y de Desarrollo",
+    "Asuntos Económicos, Financieros, Ambientales y de Desarrollo",
     "Asamblea General"
 );
 new Committee(
     "Tercera Comisión",
-    "Comisión de Asuntos Sociales, Humanitarios y Culturales",
+    "Asuntos Sociales, Humanitarios y Culturales",
     "Asamblea General"
 );
 new Committee(
     "Cuarta Comisión",
-    "Comisión de la Política Especial y de Descolonización",
+    "la Política Especial y de Descolonización",
     "Asamblea General"
 );
 new Committee(
     "Quinta Comisión",
-    "Comisión de Asuntos Administrativos y de Presupuesto",
+    "Asuntos Administrativos y de Presupuesto",
     "Asamblea General"
 );
 new Committee("Sexta Comisión", "Comisión Jurídica", "Asamblea General");
