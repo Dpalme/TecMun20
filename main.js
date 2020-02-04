@@ -12,17 +12,8 @@ const /** !List<string> */ sections = [
 		"contact"
 	];
 
-// Footer
-const /** !string */ main_tag = "Committees";
-const /** !Object<string, List<any>> */ titles_tags = {
-		"General Assembly": general_assembly,
-		"Special Committees": special_committees,
-		"Crisis Committees": crisis_committees
-	};
 
 function body() {
-	start();
-
 	header({
 		logo: {
 			image: image_route,
@@ -32,10 +23,10 @@ function body() {
 		},
 		links: sections
 	});
-
+    start();
 	home();
 
-	footer({ title: main_tag, titles: titles_tags });
+	//footer({ title: mainTag, links: footerLinks });
 }
 
 function home() {
@@ -56,12 +47,12 @@ function about() {
 function committees() {
 	clearContent();
 
-	objectToContent({ type: "h1", innerText: "General Assembly" });
+	objectToContent({ type: "h1", innerText: "Committees" });
 	gaContainer = object({
 		type: "div",
 		classList: "committee-container"
 	});
-	general_assembly.forEach(committee => {
+	allCommittees.forEach(committee => {
 		gaContainer.appendChild(
 			object({
 				type: "div",
@@ -69,7 +60,7 @@ function committees() {
 				onclick: "viewCommittee('" + committee.seralize() + "')",
 				children: [
 					object({ type: "h2", innerText: committee.abreviation }),
-					object({ type: "h3", innerText: committee.name })
+                    object({ type: "h3", innerText: committee.name })
 				]
 			})
 		);
@@ -79,11 +70,11 @@ function committees() {
 
 function viewCommittee(committee) {
 	clearContent();
-    information = committee.split(",");
+    information = committee.split("|");
     objectToContent({type: "div", classList: "committee-page", children: [
     object({ type: "h2", innerText: information[0] }),
-	object({ type: "h3", innerText: information[1] }),
-	object({ type: "h4", innerText: "Type: " + information[2] })]
+    object({ type: "h3", innerText: information[1] }),
+    object({ type: "h4", innerText: information[2] })]
 })
 	
 }

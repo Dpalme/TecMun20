@@ -97,8 +97,8 @@ function createFooterOption(text) {
 	li.appendChild(
 		object({
 			type: "a",
-			innerText: "- " + text,
-			onclick:  "viewCommittee('" + text + "')",
+			innerText: text.toUpperCase(),
+			onclick:  text + "()",
 			tabindex: "0"
 		})
 	);
@@ -138,10 +138,8 @@ function objectToContent(options) {
  *  - <main id "content"></main>.
  *  - <footer id "footer"></footer>.
  */
-function start() {
-	document.body.appendChild(object({ type: "header", id: "header" }));
+function start() {	
 	document.body.appendChild(object({ type: "main", id: "content" }));
-	document.body.appendChild(object({ type: "footer", id: "footer" }));
 }
 
 /**
@@ -154,7 +152,10 @@ function start() {
  * @param {headerOptions} options
  */
 function header(options) {
-	// Hamburger
+    document.body.appendChild(object({ type: "header", id: "header" }));
+    
+    // Hamburger
+
 	hamburger = object({
 		type: "div",
 		classList: "hamburger",
@@ -164,8 +165,9 @@ function header(options) {
 	hamburger.appendChild(object({ type: "div", classList: "line" }));
 	hamburger.appendChild(object({ type: "div", classList: "line" }));
 
-	// Logo
-	topDiv = object({ type: "div", classList: "topDiv" });
+    // Logo
+
+    topDiv = object({ type: "div", classList: "topDiv" });
 
 	if (options.logo.image !== undefined)
 		topDiv.appendChild(object({ type: "img", src: "blacklogo.png" }));
@@ -187,43 +189,45 @@ function header(options) {
 			);
 		span.appendChild(logo);
 	}
-
-	topDiv.append(span);
+    topDiv.append(span);
+    
 	if (options.logo.under !== undefined)
 		span.appendChild(object({ type: "h3", innerText: options.logo.under }));
 
-	//Navigation Links
-	navLinks = object({ type: "ul", classList: "nav-links" });
+    //Navigation Links
+    
+    navLinks = object({ type: "ul", classList: "nav-links" });
 	options.links.forEach(text => {
 		navLinks.appendChild(createHeaderOption(text));
 	});
 
 	//Append the items to content
-	append("header", hamburger);
+    
+    append("header", hamburger);
 	append("header", topDiv);
 	append("header", navLinks);
 }
 
-/** @typedef {{title?: string, titles: {string: string[]}} footerOptions */
+/** @typedef {{title?: string, links: string[]} footerOptions */
 
 /**
  * Creates a footer on the <footer> element.
  * @param {footerOptions} options
  */
 function footer(options) {
+    document.body.appendChild(object({ type: "footer", id: "footer" }));
+
 	if(options.title !== undefined) append("footer", object({ type: "h2", innerText: options.title }));
     
     mainDiv = object({ type: "div", classList: "row" });
-    
-	for (title in options.titles) {
+
+	for (section in options.links) {
 		col = object({ type: "div", classList: "column" });
-		col.appendChild(object({ type: "h3", innerText: title }));
+		col.appendChild(object({ type: "h3", innerText: section }));
 		span = object({ type: "span" });
-		if (options.titles.hasOwnProperty(title)) {
-			options.titles[title].forEach(listLink => {
-				span.appendChild(createFooterOption(listLink));
-			});
-		}
+		options.links[section].forEach(listLink => {
+            span.appendChild(createFooterOption(listLink));
+        });
 		col.appendChild(span);
 		mainDiv.appendChild(col);
     }
