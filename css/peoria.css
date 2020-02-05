@@ -49,7 +49,7 @@ html {
 }
 
 body {
-	background-color: var(--bg);
+	background-color: var(--bg2);
 	color: var(--font);
 	font-family: var(--font-face);
 	font-weight: 400;
@@ -115,51 +115,14 @@ header {
 	flex-direction: column;
 	position: static;
 	width: 100%;
-	padding: 1rem 0rem 0 0;
 	margin-bottom: 5vw;
+	background-color: var(--bg);
 }
 
 header h3 {
 	display: inline;
 	font-size: 1rem;
 	margin: 0;
-}
-
-footer {
-	width: 90%;
-	margin: auto;
-	padding: 2% 5%;
-	background: var(--bg3);
-	bottom: 0;
-	display: flex;
-	flex-direction: column;
-}
-
-footer h2 {
-	font-size: 1.8rem;
-}
-
-footer h3 {
-	display: inline;
-	font-size: 1.5rem;
-}
-
-footer a {
-	font-size: 1rem;
-}
-
-footer div span {
-	width: 90%;
-	margin: auto;
-	flex-direction: row !important;
-	flex-wrap: wrap;
-}
-
-footer div li {
-	display: inline-block;
-	flex: auto;
-	margin: 0.4rem 0;
-	width: 50%;
 }
 
 main {
@@ -198,19 +161,42 @@ main {
 
 /* Classes */
 
+.line {
+	background: var(--accent);
+	width: 30px;
+	height: 3px;
+	margin: 5px;
+}
+
+.hamburger {
+	position: absolute;
+	cursor: pointer;
+	right: 5%;
+	top: 7%;
+	transform: translate(-5%, -50%);
+	z-index: 2;
+}
+
+.nav-links.open {
+	display: block;
+	background: var(--bg3);
+	z-index: 1;
+}
+
 .nav-links {
-	display: flex;
-	list-style: none;
+	position: fixed;
+	height: 100vh;
 	width: 100%;
-	padding: 0;
-	background: var(--bg2);
-	border-top: solid 4px var(--accent);
+	flex-direction: column;
+	display: none;
+	padding-inline-start: 0;
 }
 
 .nav-links li {
 	width: 100%;
+	list-style: none;
 	text-align: center;
-    background: linear-gradient(135deg, var(--accent) 50%, transparent 0%);
+    background: linear-gradient(135deg, var(--accent2) 50%, transparent 0%);
     background-size: 200% 500%;
     background-position: right bottom;
 	transition: all .3s ease-in;
@@ -221,11 +207,11 @@ main {
 }
 
 .header-link {
+	font-style: italic;
 	display: block;
-	padding: 0.75rem 0.5rem;
 	text-decoration: none;
 	color: var(--font);
-	font-size: 1rem;
+	font-size: 5rem;
 	outline: 0;
 }
 
@@ -246,8 +232,7 @@ main {
 .topDiv {
 	display: flex;
 	flex-direction: row;
-	padding: 0.125rem 0 1.25rem;
-	margin-left: 5vw;
+	margin: 1.5rem 2rem;
 }
 
 .topDiv img {
@@ -256,11 +241,13 @@ main {
 }
 
 .logo {
+	margin: .8rem 0;
 	font-weight: normal;
 	display: flex;
 	flex-wrap: wrap;
 	color: var(--accent);
 	font-size: 3rem;
+	line-height: 2.7rem;
 	padding: 0;
 	cursor: defaults;
 }
@@ -285,6 +272,7 @@ main {
 	flex-direction: row;
 	align-items: flex-start;
 	width: 100%;
+	justify-items: stretch;
 }
 
 .column {
@@ -328,6 +316,10 @@ main {
 		margin-right: auto;
 	}
 
+	.header-link {
+		font-size: 3rem;
+	}
+
 	.logo {
 		font-size: 2rem;
 	}
@@ -338,44 +330,6 @@ main {
 	.row {
 		flex-direction: column;
 		max-width: 90%;
-	}
-
-	.line {
-		background: var(--accent);
-		width: 30px;
-		height: 3px;
-		margin: 5px;
-	}
-
-	.hamburger {
-		position: absolute;
-		cursor: pointer;
-		right: 5%;
-		top: 5%;
-		transform: translate(-5%, -50%);
-		z-index: 2;
-	}
-
-	.nav-links {
-		position: fixed;
-		height: 100vh;
-		width: 100%;
-		flex-direction: column;
-		display: none;
-	}
-
-	.header-link {
-		font-size: 4rem;
-	}
-
-	.nav-links li {
-		margin: 2rem 0;
-	}
-
-	.nav-links.open {
-		display: block;
-		background: var(--bg);
-		z-index: 1;
 	}
 
 	.column {

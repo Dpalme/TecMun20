@@ -5,23 +5,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>TECMUN XXXIV</title>
-		<link rel="stylesheet" href="css/peoria.css" />
-		<link rel="stylesheet" href="css/customStyles.css" />
-		<script src="js/peoria.js"></script>
+		<link rel="stylesheet" href="css/Okra, Fracktif/MyFontsWebfontsKit.css">
+		<link rel="stylesheet" href="css/peoria.css">
+		<link rel="stylesheet" href="css/customStyles.css">
 	</head>
 	<body>
 		<header id="header">
-			<div class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')">
+			<div class="topDiv">
+				<img src="img/blacklogo.png"/>
+				<span>
+					<a class="logo" onclick="inicio()">
+						TEC
+						<span class="text-primary">
+							MUN
+						</span>
+					</a>
+					<div class="row">
+						<h3>XXXIV</h3>
+						<h3 style="margin-left: auto">Abril 2020</h3>
+					</div>
+				</span>
+			</div>
+			
+			<div class="hamburger" onclick="navLinks.classList.toggle('open')">
 				<div class="line"></div>
-				<div class="line"></div>
+				<div class="line" style="width: 25px;"></div>
 				<div class="line"></div>
 			</div>
-			<ul class="nav-links" id="nav">
-				<li onclick="document.getElementById('nav').classList.toggle('open')">
-					<a class="header-link" tabindex="0" href="es/">ESPAÑOL</a>
+			
+			<ul class="nav-links" onclick="navLinks.classList.toggle('open')" id="navLinks">
+				<li>
+					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">INICIO</a>
 				</li>
-				<li onclick="document.getElementById('nav').classList.toggle('open')">
-					<a class="header-link" tabindex="0" href="en/">ENGLISH</a>
+				<li>
+					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">COMITÉS</a>
+				</li>
+				<li>
+					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">NOSOTROS</a>
+				</li>
+				<li>
+					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">CONTACTO</a>
+				</li>
+				<li>
+					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">INICIO</a>
 				</li>
 			</ul>
 		</header>
