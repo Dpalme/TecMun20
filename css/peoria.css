@@ -28,12 +28,13 @@
 */
 
 :root {
-	--bg: #ECECE4;
-	--bg2: #BBBCBB;
-	--bg3: #F69783;
-	--font: #000000;
-	--accent: #20427E;
-	--accent2: #F14C29;
+	--bg: #EBE9E6;
+	--bg2: #B2E1EC;
+	--bg3: #0E4D8DEF;
+	--font: #1A254B;
+	--accent: #005E9C;
+	--accent2: #15C2E7;
+	--hamburger: #1A254B;
 	--font-face: "OktaNeue", Arial, Helvetica, sans-serif;
 }
 
@@ -162,7 +163,7 @@ main {
 /* Classes */
 
 .line {
-	background: var(--accent);
+	background: var(--hamburger);
 	width: 30px;
 	height: 3px;
 	margin: 5px;
@@ -181,6 +182,7 @@ main {
 	display: block;
 	background: var(--bg3);
 	z-index: 1;
+	transform: scaleY(1);
 }
 
 .nav-links {
@@ -188,8 +190,10 @@ main {
 	height: 100vh;
 	width: 100%;
 	flex-direction: column;
-	display: none;
+	transform: scaleY(0);
+	transform-origin: top;
 	padding-inline-start: 0;
+	transition: all .2s ease-in;
 }
 
 .nav-links li {
@@ -304,35 +308,11 @@ main {
 /* Mobile */
 
 @media screen and (max-width: 1100px) {
-	nav {
-		position: relative;
-		margin: auto 40% 0 0;
-	}
-
-	main {
-		padding: 0vw 3vw 1vw 3vw;
-		margin: auto;
-		width: 90%;
-		margin-right: auto;
-	}
-
 	.header-link {
 		font-size: 3rem;
 	}
-
-	.logo {
-		font-size: 2rem;
-	}
-
-	.topDiv h3 {
-		font-size: 0.7rem;
-	}
-	.row {
-		flex-direction: column;
-		max-width: 90%;
-	}
-
-	.column {
-		max-width: 100%;
+	
+	.topDiv{
+		margin: .5rem;
 	}
 }
