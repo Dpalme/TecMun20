@@ -8,10 +8,8 @@ nav a {
 }
 
 .committee {
-    min-width: 20rem;
-    max-width: 25rem;
     height: 12rem;
-    width: auto;
+    width: 23rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -30,12 +28,13 @@ nav a {
 
 .committee h2 {
     font-size: 2rem;
-    margin: 5% auto auto auto;
+    margin: auto;
+    font-weight: bold;
 }
 
 .committee h3 {
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: normal;
     margin: auto;
     width: 80%;
 }

@@ -36,7 +36,7 @@ function body() {
 
 function inicio() {
 	clearContent();
-
+	activateMenu("inicio");
 	objectToContent({ type: "h1", innerText: greeting });
 	objectToContent({
 		type: "h2",
@@ -46,10 +46,12 @@ function inicio() {
 
 function nosotros() {
 	clearContent();
+	activateMenu("nosotros");
 }
 
 function comités() {
 	mainCommittees({title: title});
+	activateMenu("comités");
 }
 
 function viewCommittee(committee) {
@@ -65,8 +67,10 @@ function viewCommittee(committee) {
 
 function archivo() {
 	clearContent();
+	activateMenu("archivo");
 }
 
 function contacto() {
 	clearContent();
+	activateMenu("contacto");
 }

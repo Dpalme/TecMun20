@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <script>window.open("TecMun20/en", "_top")</script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>TECMUN XXXIV</title>
+		<link rel="stylesheet" href="css/peoria.css" />
+		<link rel="stylesheet" href="css/customStyles.css" />
+		<script src="js/peoria.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<ul class="nav-links" id="nav">
+				<li onclick="document.getElementById('nav').classList.toggle('open')">
+					<a class="header-link" tabindex="0" href="es/">ESPAÑOL</a>
+				</li>
+				<li onclick="document.getElementById('nav').classList.toggle('open')">
+					<a class="header-link" tabindex="0" href="en/">ENGLISH</a>
+				</li>
+			</ul>
+		</header>
+	</body>
 </html>

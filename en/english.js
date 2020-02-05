@@ -34,15 +34,23 @@ function body() {
 }
 
 function home() {
-	landing({greet: greeting, phrase: phrase_})
+	clearContent();
+	activateMenu("home");
+	objectToContent({ type: "h1", innerText: greeting });
+	objectToContent({
+		type: "h2",
+		innerText: phrase_
+	});
 }
 
 function about() {
 	clearContent();
+	activateMenu("about");
 }
 
 function committees() {
 	mainCommittees({title: title});
+	activateMenu("committees");
 }
 
 function viewCommittee(committee) {
@@ -58,8 +66,10 @@ function viewCommittee(committee) {
 
 function archive() {
 	clearContent();
+	activateMenu("archive");
 }
 
 function contact() {
 	clearContent();
+	activateMenu("contact");
 }

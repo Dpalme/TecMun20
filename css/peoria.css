@@ -1,25 +1,5 @@
-/* PEORIA 02.01.2020 */
+/* PEORIA 04.01.2020 */
 /* Diego Palmerin Bonada */
-
-@font-face {
-	font-family: "Gotham";
-	src: url("gotham/GothamBook.woff2") format("woff2"),
-		/* Super Modern Browsers */ url("gotham/GothamBook.woff")
-			format("woff"),
-		/* Pretty Modern Browsers */ url("gotham/GothamBook.ttf")
-			format("truetype"); /* Safari, Android, iOS */
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: "Gotham";
-	src: url("gotham/Gotham-Light.woff2") format("woff2"),
-		/* Super Modern Browsers */ url("gotham/Gotham-Light.woff")
-			format("woff"),
-		/* Pretty Modern Browsers */ url("gotham/Gotham-Light.ttf")
-			format("truetype"); /* Safari, Android, iOS */
-	font-weight: normal;
-}
 
 /* Global Variables */
 
@@ -48,18 +28,18 @@
 */
 
 :root {
-	--bg: #fff;
-	--bg2: #5C7378;
-	--bg3: #A36F9F;
-	--font: #0B2141;
-	--accent: #F99D2A;
-	--accent2: #CAB898;
-	--font-face: 'Gotham', Arial, Helvetica, sans-serif;
+	--bg: #ECECE4;
+	--bg2: #BBBCBB;
+	--bg3: #F69783;
+	--font: #000000;
+	--accent: #20427E;
+	--accent2: #F14C29;
+	--font-face: "OktaNeue", Arial, Helvetica, sans-serif;
 }
 
 /* Start of Style Sheet */
 
-*{
+* {
 	margin: 0;
 }
 
@@ -71,8 +51,8 @@ html {
 body {
 	background-color: var(--bg);
 	color: var(--font);
-    font-family: var(--font-face);
-    font-weight: 400;
+	font-family: var(--font-face);
+	font-weight: 400;
 	font-size: 1rem;
 	width: 100%;
 }
@@ -80,32 +60,33 @@ body {
 h1 {
 	color: var(--accent);
 	font-weight: bold;
-	font-size: 7rem;
+	font-size: 5rem;
 	margin: 3rem auto;
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2rem;
 	margin: auto;
 }
 
 h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem auto;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 1rem auto;
 }
 
 h4 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	margin: auto auto auto 15vw;
 }
 
 h6 {
-	font-size: 1rem;
+	font-size: .8rem;
 	margin: auto;
 }
 
 a {
+	font-weight: bold;
 	margin: auto;
 	text-decoration: none;
 	color: var(--font);
@@ -115,22 +96,23 @@ a {
 }
 
 a:hover {
-    color: var(--accent);
+	color: var(--accent);
 }
 
 p {
+	font-style: italic;
 	position: relative;
 	font-size: 1.2rem;
 	text-align: justify;
 	text-justify: auto;
 	width: 95%;
 	margin: auto;
-	padding: .5rem 0;
+	padding: 0.5rem 0;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	position: static;
 	width: 100%;
 	padding: 1rem 0rem 0 0;
@@ -166,7 +148,7 @@ footer a {
 	font-size: 1rem;
 }
 
-footer div span{
+footer div span {
 	width: 90%;
 	margin: auto;
 	flex-direction: row !important;
@@ -176,7 +158,7 @@ footer div span{
 footer div li {
 	display: inline-block;
 	flex: auto;
-	margin: .4rem 0;
+	margin: 0.4rem 0;
 	width: 50%;
 }
 
@@ -219,20 +201,28 @@ main {
 .nav-links {
 	display: flex;
 	list-style: none;
-    width: 100%;
-    padding: 0;
-    background: var(--bg2);
-    border-top: solid 4px var(--accent);
+	width: 100%;
+	padding: 0;
+	background: var(--bg2);
+	border-top: solid 4px var(--accent);
 }
 
 .nav-links li {
 	width: 100%;
 	text-align: center;
+    background: linear-gradient(135deg, var(--accent) 50%, transparent 0%);
+    background-size: 200% 500%;
+    background-position: right bottom;
+	transition: all .3s ease-in;
+}
+
+.nav-links li:hover {
+	background-position: left top;
 }
 
 .header-link {
-    display: block;
-	padding: .75rem .5rem;
+	display: block;
+	padding: 0.75rem 0.5rem;
 	text-decoration: none;
 	color: var(--font);
 	font-size: 1rem;
@@ -240,19 +230,22 @@ main {
 }
 
 .header-link:hover{
-	color: var(--accent);
+	color: var(--bg);
 }
 
-.header-link:focus { 
+.header-link:focus {
 	background: transparent;
 	border: solid 1px var(--accent);
 }
 
-.selected { color: var(--accent);}
+.selected a, .selected:hover{
+	background: var(--accent) !important;
+	color: var(--bg) !important;
+}
 
 .topDiv {
-    display: flex;  
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 	padding: 0.125rem 0 1.25rem;
 	margin-left: 5vw;
 }
@@ -263,20 +256,23 @@ main {
 }
 
 .logo {
-	display: block;
-	color: var(--font);
+	font-weight: normal;
+	display: flex;
+	flex-wrap: wrap;
+	color: var(--accent);
 	font-size: 3rem;
-	margin: 0.6rem auto auto auto;
 	padding: 0;
+	cursor: defaults;
 }
 
-.logo:hover, .logo {
+.logo:hover,
+.logo {
 	user-select: none;
 	animation: none;
 }
 
 .text-primary {
-	color: var(--accent);
+	color: var(--accent2);
 	margin: 0;
 }
 
@@ -286,8 +282,8 @@ main {
 
 .row {
 	display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+	flex-direction: row;
+	align-items: flex-start;
 	width: 100%;
 }
 
@@ -307,35 +303,37 @@ main {
 	margin: 1rem auto;
 	border: solid 1px var(--accent);
 	background: linear-gradient(to right, var(--accent) 65%, transparent 65%);
-    background-size: 300% 100%;
-    background-position:right bottom;
-	transition:all .5s ease;
+	background-size: 300% 100%;
+	background-position: right bottom;
+	transition: all 0.5s ease;
 }
 
 .contact_form a:hover,
-.contact_form a:focus { background-position: left bottom;}
+.contact_form a:focus {
+	background-position: left bottom;
+}
 
 /* Mobile */
 
 @media screen and (max-width: 1100px) {
-    nav {
+	nav {
 		position: relative;
 		margin: auto 40% 0 0;
 	}
 
-    main {
+	main {
 		padding: 0vw 3vw 1vw 3vw;
 		margin: auto;
 		width: 90%;
 		margin-right: auto;
-    }
-    
+	}
+
 	.logo {
 		font-size: 2rem;
 	}
 
 	.topDiv h3 {
-		font-size: .7rem;
+		font-size: 0.7rem;
 	}
 	.row {
 		flex-direction: column;
@@ -363,7 +361,7 @@ main {
 		height: 100vh;
 		width: 100%;
 		flex-direction: column;
-        display: none;
+		display: none;
 	}
 
 	.header-link {
