@@ -3,39 +3,16 @@
 
 /* Global Variables */
 
-/* INITIAL VALUES
-:root {
-	--bg: #eaeaea;
-	--bg2: #c8c8c8;
-	--bg3: #aeaeae;
-	--font: #121212;
-	--accent: #1D54B9;
-	--accent2: #1DB954;
-	--font-face: 'Roboto', Arial, Helvetica, sans-serif;
-}
-*/
-
-/* DARK MODE
-:root {
-	--bg: #121212;
-	--bg2: #060606;
-	--bg3: #181818;
-	--font: #eaeaea;
-	--accent: #1D54B9;
-	--accent2: #1DB954;
-	--font-face: 'Roboto', Arial, Helvetica, sans-serif;
-}
-*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext');
 
 :root {
-	--bg: #EBE9E6;
-	--bg2: #B2E1EC;
-	--bg3: #0E4D8DEF;
-	--font: #1A254B;
-	--accent: #005E9C;
-	--accent2: #15C2E7;
-	--hamburger: #1A254B;
-	--font-face: "OktaNeue", Arial, Helvetica, sans-serif;
+	--bg: #ffffff;
+	--bg2: #B5B5B5;
+	--bg3: #23499FE6 	;
+	--font: #000000;
+	--accent: #00318A;
+	--accent2: #000066;
+	--font-face: "Lato", Arial, Helvetica, sans-serif;
 }
 
 /* Start of Style Sheet */
@@ -100,35 +77,18 @@ a:hover {
 	color: var(--accent);
 }
 
-p {
-	font-style: italic;
-	position: relative;
-	font-size: 1.2rem;
-	text-align: justify;
-	text-justify: auto;
-	width: 95%;
-	margin: auto;
-	padding: 0.5rem 0;
-}
-
 header {
+	position: fixed;
 	display: flex;
 	flex-direction: column;
-	position: static;
 	width: 100%;
 	margin-bottom: 5vw;
 	background-color: var(--bg);
 }
 
-header h3 {
-	display: inline;
-	font-size: 1rem;
-	margin: 0;
-}
-
-main {
-	margin: 0 auto 5vw auto;
-	width: 95%;
+header img {
+	height: 6rem;
+	margin: 1rem;
 }
 
 /* Selection */
@@ -163,26 +123,30 @@ main {
 /* Classes */
 
 .line {
-	background: var(--hamburger);
+	background: var(--font);
 	width: 30px;
 	height: 3px;
-	margin: 5px;
+	margin: 7px;
 }
 
 .hamburger {
 	position: absolute;
 	cursor: pointer;
-	right: 5%;
-	top: 7%;
-	transform: translate(-5%, -50%);
+	right: 4rem;
+	top: 4rem;
+	transform: translateY(-50%);
+	height: 2rem;
+	width: 3rem;
 	z-index: 2;
+	background: linear-gradient(to bottom, #000 20%, transparent 20%, transparent 40%, #000 40%, #000 60%, transparent 60%, transparent 80%, #000 80%);
 }
 
 .nav-links.open {
 	display: block;
+	position: absolute;
 	background: var(--bg3);
 	z-index: 1;
-	transform: scaleY(1);
+	transform: scale(1, 1);
 }
 
 .nav-links {
@@ -190,8 +154,8 @@ main {
 	height: 100vh;
 	width: 100%;
 	flex-direction: column;
-	transform: scaleY(0);
-	transform-origin: top;
+	transform: scale(0, 0);
+	transform-origin: top right;
 	padding-inline-start: 0;
 	transition: all .2s ease-in;
 }
@@ -200,7 +164,7 @@ main {
 	width: 100%;
 	list-style: none;
 	text-align: center;
-    background: linear-gradient(135deg, var(--accent2) 50%, transparent 0%);
+    background: linear-gradient(135deg, var(--accent) 50%, transparent 0%);
     background-size: 200% 500%;
     background-position: right bottom;
 	transition: all .3s ease-in;
@@ -211,7 +175,8 @@ main {
 }
 
 .header-link {
-	font-style: italic;
+	font-family: 'OktaNeue';
+	font-weight: bold;
 	display: block;
 	text-decoration: none;
 	color: var(--font);
@@ -233,42 +198,9 @@ main {
 	color: var(--bg) !important;
 }
 
-.topDiv {
-	display: flex;
-	flex-direction: row;
-	margin: 1.5rem 2rem;
-}
-
-.topDiv img {
-	height: 6rem;
-	margin-right: 1rem;
-}
-
-.logo {
-	margin: .8rem 0;
-	font-weight: normal;
-	display: flex;
-	flex-wrap: wrap;
-	color: var(--accent);
-	font-size: 3rem;
-	line-height: 2.7rem;
-	padding: 0;
-	cursor: defaults;
-}
-
-.logo:hover,
-.logo {
-	user-select: none;
-	animation: none;
-}
-
 .text-primary {
 	color: var(--accent2);
 	margin: 0;
-}
-
-.separation {
-	margin-bottom: 3rem;
 }
 
 .row {
@@ -283,26 +215,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
-}
-
-.contact_form {
-	display: flex;
-	flex-direction: row;
-}
-
-.contact_form a {
-	padding: 1rem;
-	margin: 1rem auto;
-	border: solid 1px var(--accent);
-	background: linear-gradient(to right, var(--accent) 65%, transparent 65%);
-	background-size: 300% 100%;
-	background-position: right bottom;
-	transition: all 0.5s ease;
-}
-
-.contact_form a:hover,
-.contact_form a:focus {
-	background-position: left bottom;
 }
 
 /* Mobile */

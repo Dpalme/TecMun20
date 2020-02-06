@@ -15,15 +15,14 @@
 		url("webfonts/3AF2D2_1_0.woff2") format("woff2"),
 		url("webfonts/3AF2D2_1_0.woff") format("woff"),
         url("webfonts/3AF2D2_1_0.ttf") format("truetype");
-    font-style: italic;
+	font-weight: bold;
 }
 
 @font-face {
-	font-family: "OktaNeue";
+	font-family: "Fracktif";
 	src: url("webfonts/3AF2D2_2_0.eot");
 	src: url("webfonts/3AF2D2_2_0.eot?#iefix") format("embedded-opentype"),
 		url("webfonts/3AF2D2_2_0.woff2") format("woff2"),
 		url("webfonts/3AF2D2_2_0.woff") format("woff"),
         url("webfonts/3AF2D2_2_0.ttf") format("truetype");
-    font-weight: bold;
 }
