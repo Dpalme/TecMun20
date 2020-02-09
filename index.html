@@ -5,34 +5,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>TECMUN XXXIV</title>
-		<link rel="stylesheet" href="css/Okra, Fracktif/MyFontsWebfontsKit.css">
+		<!link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/peoria.css">
 		<link rel="stylesheet" href="css/customStyles.css">
 	</head>
 	<body>
-		<header id="header">
-			<img class="logo" src="img/Logo.svg"/>
+		<header>
+			<img src="img/Logo.svg"/>
 			
 			<div class="hamburger" onclick="navLinks.classList.toggle('open')">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
 			</div>
 			
 			<ul class="nav-links" id="navLinks">
-				<li>
-					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">INICIO</a>
-				</li>
-				<li>
-					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">COMITÉS</a>
-				</li>
-				<li>
-					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">NOSOTROS</a>
-				</li>
-				<li>
-					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">CONTACTO</a>
-				</li>
-				<li>
-					<a class="header-link" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">INICIO</a>
-				</li>
+				<div class="container absolute-centered centered-text">
+					<li>
+						<a class="header-link links centered-text" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">INICIO</a>
+					</li>
+					<li>
+						<a class="header-link links centered-text" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">COMITÉS</a>
+					</li>
+					<li>
+						<a class="header-link links centered-text" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">NOSOTROS</a>
+					</li>
+					<li>
+						<a class="header-link links centered-text" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">CONTACTO</a>
+					</li>
+					<li>
+						<a class="header-link links centered-text" tabindex="0" onclick="document.getElementById('navLinks').classList.toggle('open')">INICIO</a>
+					</li>
+				</div>
 			</ul>
 		</header>
+
+		<div class="container">
+			<h1>TEXT</h1>
+		</div>
 	</body>
 </html>
