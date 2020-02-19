@@ -7,7 +7,6 @@
 		<title>TECMUN XXXIV</title>
 		<!link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/peoria.css" />
-		<link rel="stylesheet" href="css/customStyles.css" />
 	</head>
 	<body onload="hamburger = document.getElementById('hamburger')">
 		<header class="">
@@ -71,7 +70,7 @@
 						>Contacto</a
 					>
 				</li>
-				<div class="social-icons flex-row center-horizontal col-half">
+				<div class="social-icons flex-row center-horizontal col half-width">
 					<a>
 						<svg
 							width="8"
@@ -152,6 +151,7 @@
 			</ul>
 		</header>
 
+		<!Inicio>
 		<div class="fullscreen">
 			<a name="Inicio"></a>
 			<div
@@ -176,6 +176,7 @@
 			</a>
 		</div>
 
+		<!Nosotros>
 		<div
 			class="fullscreen"
 			style="background: linear-gradient(var(--background)50%, var(--dark-blue)50%);"
@@ -217,6 +218,7 @@
 			</a>
 		</div>
 
+		<!Comités>
 		<div class="fullscreen">
 			<a name="Comites"></a>
 			<a href="#Nosotros">
@@ -225,7 +227,37 @@
 				</svg>
 			</a>
 			<div class="content">
-				<h3>Comités</h3>
+				<h3 class="separator">Comités</h3>
+				<div class="row third-width">
+					<a class="margin-auto">AG</a>
+					<a class="margin-auto">ECOSOC</a>
+					<a class="margin-auto">AEOR</a>
+				</div>
+				<div class="division-line full-width"></div>
+				<div class="row fifth-width margin-none right">
+					<a class="margin-auto">ES</a>
+					<a class="margin-auto">EN</a>
+					<a class="margin-auto">FR</a>
+				</div>
+				<div class="small-separator"></div>
+				<div class="row full-width">
+					<div class="committee blue-bg">
+						<div class="absolute-centered fourth-width">
+							<h4 class="white">NATO</h4>
+							<div class="division-line"></div>
+							<p class="white small-body">North America Trade Organization</p>
+						</div>
+					</div>
+
+					<div class="committee red-bg">
+						<div class="absolute-centered fourth-width">
+							<h4 class="white">ABREVIATION</h4>
+							<div class="division-line"></div>
+							<p class="white small-body">FULL COMMITTEE NAME</p>
+						</div>
+					</div>
+					
+				</div>
 			</div>
 			<a href="#FAQ" >
 				<svg xmlns="http://www.w3.org/2000/svg" height="27px" width="49px" viewBox="0 0 49 27" class="bottom-center navButton">
@@ -234,6 +266,7 @@
 			</a>
 		</div>
 
+		<!FAQ>
 		<div class="fullscreen mid-white-bg">
 			<a name="FAQ"></a>
 			<a href="#Comites" >
@@ -243,7 +276,28 @@
 			</a>
 			<div class="content">
 				<h3>F.A.Q</h3>
-				<h4 class="grayed-out">Preguntas Frecuentes</h4>
+				<h4 class="grayed-out separator">Preguntas Frecuentes</h4>
+				<div class="row top-align">
+					<div class="col third-width">
+						<h4>¿Cómo puedo registrarme?</h4>
+						<div class="small-separator"></div>
+						<p>Thento electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+					</div>
+					<div class="col third-width">
+						<h4>¿Cuáles son los requisitos?</h4>
+						<div class="small-separator"></div>
+						<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently.</p>
+					</div>
+					<div class="col third-width">
+						<h4>¿Para qué nivél escolar es?</h4>
+						<div class="small-separator"></div>
+						<p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+				</div>
+				<div class="separator"></div>
+				<a class="center-horizontal" href="FAQ">
+					<div class="button button-text">VER TODOS</div>
+				</a>
 			</div>
 			<a href="#Contacto" >
 				<svg xmlns="http://www.w3.org/2000/svg" height="27px" width="49px" viewBox="0 0 49 27" class="bottom-center navButton">
@@ -252,6 +306,7 @@
 			</a>
 		</div>
 
+		<!Contacto>
 		<div class="fullscreen dark-blue-bg">
 			<a name="Contacto"></a>
 			<a href="#FAQ" >
@@ -267,29 +322,31 @@
 				<p>(01) 666 - 693 - 456</p>
 				<h4 class="white">Ubicación</h4>
 				<p>Carr. Lago de Guadalupe Km. 3.5, Margarita Maza de Juárez, 52926 Cd López Mateos, Méx</p>
-				<div class="card">
-					<h3>Envíanos un mensaje</h3>
-					<p>Si tienes alguna pregunta o te gustaría saber algo más de nosotros , nuestro equipo con gusto contestará tus preguntas.</p>
-					<input type="text" placeholder="Nombre">
-					<input type="text" placeholder="Email">
-					<input type="text" placeholder="Escuela">
-					<input type="text" placeholder="Celular">
-					<input type="text" placeholder="Escribe tu mensaje aquí...">
-				</div>
 			</div>
+		</div>
+
+		<!Contact Form>
+		<div class="card">
+			<h3>Envíanos un mensaje</h3>
+			<p>Si tienes alguna pregunta o te gustaría saber algo más de nosotros , nuestro equipo con gusto contestará tus preguntas.</p>
+			<input type="text" placeholder="Nombre">
+			<input type="text" placeholder="Email">
+			<input type="text" placeholder="Escuela">
+			<input type="text" placeholder="Celular">
+			<input type="text" placeholder="Escribe tu mensaje aquí...">
 		</div>
 
 		<footer>
 			<img src="img/Logo-White.svg" />
-			<div class="division-line"></div>
+			<div class="division-line full-width"></div>
 			<div class="flex-row margin-auto center-horizontal">
-				<div class="flex-row col-third white margin-auto">
+				<div class="flex-row col third-width white margin-auto">
 					<a style="margin: auto">Inicio</a>
 					<a style="margin: auto">FAQ</a>
 					<a style="margin: auto">Comités</a>
 				</div>
-				<p class="col-third links white margin-auto">©2020 TECMUN</p>
-				<div class="social-icons flex-row col-third margin-auto">
+				<p class="col third-width links white margin-auto">©2020 TECMUN</p>
+				<div class="social-icons flex-row col third-width margin-auto">
 					<a>
 						<svg
 							height="16"

@@ -46,8 +46,8 @@ FONT STYLES
 */
 
 .super-title, .super-secondary-title, .main-title, .body-text,
-.secondary-title, .secondary-body, .links, .button-text, h1, h2,
-h3, h4, p {
+.secondary-title, .secondary-body, .links, .button-text, .small-body,
+h1, h2, h3, h4, p {
 	font-family: var(--font-face);
 	color: var(--font);
 	font-style: normal;
@@ -83,7 +83,7 @@ h3, h4, p {
 
 .secondary-title, h4 {
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 32px;
 }
 
@@ -92,6 +92,12 @@ h3, h4, p {
 	font-size: 14px;
 	line-height: 24px;
 	color: var(--blue-third);
+}
+
+.small-body {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
 }
 
 .links {
@@ -199,10 +205,25 @@ footer img {
 }
 
 .division-line {
-	width: var(--inner-grid-width);
+	width: 80%;
 	margin: calc(var(--gutter) / 2) auto;
 	background-color: var(--mid-gray);
 	height: 1px;
+}
+
+.committee .division-line {
+	margin: 10px auto;
+}
+
+.committee {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: calc((var(--inner-grid-width) / 4) - var(--gutter));
+	height: calc(var(--col) + (2 * var(--gutter)));
+	margin: calc(var(--gutter) / 2);
+	border-radius: 5px;
 }
 
 .flex-col {
@@ -339,6 +360,18 @@ footer img {
 	color: var(--background) !important;
 }
 
+.separator {
+	margin-bottom: var(--col);
+}
+
+.small-separator {
+	margin-bottom: var(--gutter);
+}
+
+.top-align {
+	align-items: flex-start;
+}
+
 .text-primary {
 	color: var(--blue2);
 	margin: 0;
@@ -347,36 +380,35 @@ footer img {
 .row {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
-	justify-items: stretch;
 	width: calc(var(--col)*12 + var(--gutter)*11);
 	margin: auto;
 }
 
-.col, .col-half, .col-third, .col-full, .col-fourth {
+.col {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-}
-
-.col {
 	width: var(--col);
 }
 
-.col-full {
+.full-width {
 	width: var(--inner-grid-width);
 }
 
-.col-half {
-	width: calc(var(--inner-grid-width) / 2);
+.half-width {
+	width: calc((var(--inner-grid-width) / 2) - var(--gutter));
 }
 
-.col-third {
-	width: calc(var(--inner-grid-width) / 3);
+.third-width {
+	width: calc((var(--inner-grid-width) / 3) - var(--gutter));
 }
 
-.col-fourth {
-	width: calc(var(--inner-grid-width) / 4);
+.fourth-width {
+	width: calc((var(--inner-grid-width) / 4) - var(--gutter));
+}
+
+.fifth-width {
+	width: calc((var(--inner-grid-width) / 5) - var(--gutter));
 }
 
 .margin-none {
@@ -473,6 +505,22 @@ footer img {
 
 .grayed-out {
 	color: var(--grayed-out);
+}
+
+.red-bg {
+	background: var(--red);
+}
+
+.orange-bg {
+	background: var(--orange);
+}
+
+.green-bg {
+	background: var(--green);
+}
+
+.yellow-bg {
+	background: var(--yellow);
 }
 
 .mid-white-bg {
