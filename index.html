@@ -155,18 +155,18 @@
 		<div class="fullscreen">
 			<a name="Inicio"></a>
 			<div
-				class="fullscreen"
-				style="background-image: url('img/landing-bg.jpg'); background-size: cover; position: absolute;"
+				class="fullscreen absolute"
+				style="background-image: url('img/landing-bg.jpg'); background-size: cover; "
 			></div>
 			<div
-				class="fullscreen"
-				style="background-color: var(--dark-blue); position: absolute; opacity: .4;"
+				class="fullscreen dark-blue-bg"
+				style="position: absolute; opacity: .4;"
 			></div>
 			<div class="hero-title">
 				<h1>XXXV TECMUN</h1>
 				<h2>1 al 3 de abril 2020</h2>
 				<div class="separator"></div>
-				<a class="right" href="#Registro">
+				<a class="right" href="registro">
 					<div class="button"><text class="button-text">REGISTRARME</text></div>
 				</a>
 			</div>
@@ -211,7 +211,7 @@
 			<div class="content">
 				<h3>Comités</h3>
 				<div class="small-separator"></div>
-				<div class="row third-width">
+				<div class="row col-4">
 					<a class="margin-auto">AG</a>
 					<a class="margin-auto">ECOSOC</a>
 					<a class="margin-auto">AEOR</a>
@@ -299,24 +299,24 @@
 				<h3>F.A.Q</h3>
 				<h4 class="grayed-out separator">Preguntas Frecuentes</h4>
 				<div class="row top-align">
-					<div class="col third-width margin-auto-sides">
+					<div class="col col-3 margin-auto-sides half-gutter-margin-right">
 						<h4>¿Cómo puedo registrarme?</h4>
 						<div class="small-separator"></div>
 						<p>Thento electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
 					</div>
-					<div class="col third-width margin-auto-sides">
+					<div class="col col-3 margin-auto-sides half-gutter-margin-right">
 						<h4>¿Cuáles son los requisitos?</h4>
 						<div class="small-separator"></div>
 						<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently.</p>
 					</div>
-					<div class="col third-width margin-auto-sides">
+					<div class="col col-3 margin-auto-sides">
 						<h4>¿Para qué nivél escolar es?</h4>
 						<div class="small-separator"></div>
 						<p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 					</div>
 				</div>
 				<div class="separator"></div>
-				<a class="center-horizontal" href="FAQ">
+				<a class="center-horizontal" href="faq">
 					<div class="button button-text">VER TODOS</div>
 				</a>
 			</div>
@@ -326,7 +326,7 @@
 		<div class="fullscreen dark-blue-bg">
 			<a name="Contacto"></a>
 			<div class="content">
-				<div class="third-width">
+				<div class="col-4">
 					<h3 class="white">Contacto</h3>
 					<div class="separator"></div>
 					<h4 class="white">Email</h4>
@@ -345,15 +345,19 @@
 
 		<!Contact Form>
 		<div class="relative">
-			<div class="card absolute-centered">
+			<div class="card absolute-centered front">
 				<h3>Envíanos un mensaje</h3>
-				<p>Si tienes alguna pregunta o te gustaría saber algo más de nosotros , nuestro equipo con gusto contestará tus preguntas.</p>
-				<div class="small-separator"></div>
-				<input type="text" class="third-width left" placeholder="Nombre">
-				<input type="text" class="third-width right" placeholder="Email">
-				<input type="text" class="third-width left" placeholder="Escuela">
-				<input type="text" class="third-width right" placeholder="Celular">
-				<input type="text" class="full-width-percent special-input" placeholder="Escribe tu mensaje aquí...">
+				<p class="half-gutter-margin-bottom">Si tienes alguna pregunta o te gustaría saber algo más de nosotros , nuestro equipo con gusto contestará tus preguntas.</p>
+				<form class="flex-wrap full-width-percent half-gutter-margin-bottom">
+					<input type="text" placeholder="Nombre" class="col-4 half-gutter-margin-right">
+					<input type="text" placeholder="Email" class="col-4">
+					<input type="text" placeholder="Escuela" class="col-4 half-gutter-margin-right">
+					<input type="text" placeholder="Celular" class="col-4 half-gutter-margin-bottom">
+					<textarea class="special-input body-text" placeholder="Escribe tu mensaje aquí..."></textarea>
+				</form>
+				<a class="right" href="registro">
+					<div class="button"><text class="button-text">Send</text></div>
+				</a>
 			</div>
 		</div>
 		<div class="fullscreen">
@@ -361,13 +365,13 @@
 				<img src="img/Logo-White.svg" />
 				<div class="division-line full-width"></div>
 				<div class="flex-row margin-auto center-horizontal">
-					<div class="flex-row col third-width white margin-auto">
+					<div class="flex-row col col-4 white margin-auto">
 						<a style="margin: auto">Inicio</a>
 						<a style="margin: auto">FAQ</a>
 						<a style="margin: auto">Comités</a>
 					</div>
-					<p class="col third-width links white margin-auto">©2020 TECMUN</p>
-					<div class="social-icons flex-row col third-width margin-auto">
+					<p class="col col-4 links white margin-auto">©2020 TECMUN</p>
+					<div class="social-icons flex-row col col-4 margin-auto">
 						<a>
 							<svg
 								height="16"
