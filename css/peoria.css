@@ -305,16 +305,16 @@ footer img {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 10px;
+	top: calc((var(--gutter) - 20px) / 2);
 	right: 0;
 	z-index: 2;
 	width: 30px;
 	height: 30px;
-	margin: calc((var(--gutter) - 20px) / 2) calc(50vw - var(--inner-grid-width) / 2);
+	margin: calc((var(--gutter) - 20px) / 2) var(--side-margin);
 }
 
 .hamburger:hover .line {
-	background: var(--green);
+	background: var(--mid-white);
 }
 
 .hamburger.active:hover .line {
@@ -323,11 +323,12 @@ footer img {
 
 .hamburger.active .line {
 	position: absolute;
+	background-color: var(--grayed-out);
+	top: calc(var(--gutter) - 20px);
 	transform: rotate(45deg);
 }
 
 .hamburger.active .second-line{
-	position: absolute;
 	transform: rotate(-45deg);
 	width: 30px;
 }
@@ -368,6 +369,13 @@ footer img {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.bottom-center {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
 }
 
 .bottom-right {
