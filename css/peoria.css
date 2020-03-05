@@ -257,19 +257,12 @@ footer img {
 .content {
 	position: relative;
 	width: var(--inner-grid-width);
-	height: calc((50vh - var(--side-margin)) * 2);
 	padding: var(--top-margin) var(--side-margin);
 }
 
 .content-width {
 	width: var(--inner-grid-width);
 	padding: 90px var(--side-margin);
-}
-
-.container {
-	width: var(--inner-grid-width);
-	margin: 0 var(--side-margin);
-	height: calc(var(--col)*6 + var(--gutter)*5);
 }
 
 .division-line {
@@ -288,10 +281,11 @@ footer img {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	width: 225px;
-	height: calc(var(--col) + (2 * var(--gutter)));
+	min-width: 225px;
+	height: 125px;
 	margin: var(--half-gutter) auto;
 	border-radius: 5px;
+	padding: var(--half-gutter);
 }
 
 .flex-col {
