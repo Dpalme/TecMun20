@@ -212,7 +212,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	padding: calc(var(--gutter) / 2) 0;
+	padding: var(--gutter) 0;
 
 }
 
@@ -276,6 +276,10 @@ footer img {
 	margin: 10px auto;
 }
 
+.block {
+	display: block;
+}
+
 .committee {
 	position: relative;
 	display: flex;
@@ -302,8 +306,8 @@ footer img {
 	display: inline-block;
 	background: var(--font);
 	width: 30px;
-	height: 4px;
-	margin: 3px 0;
+	height: 2px;
+	margin: 4px 0;
 	border-radius: 10px;
 	transition: ease .6s all;
 }
@@ -320,13 +324,11 @@ footer img {
 	top: calc((var(--gutter) - 20px) / 2);
 	right: 0;
 	z-index: 2;
-	width: 30px;
-	height: 30px;
 	margin: calc((var(--gutter) - 20px) / 2) var(--side-margin);
 }
 
 .hamburger:hover .line {
-	background: var(--mid-white);
+	background: var(--mid-gray);
 }
 
 .hamburger.active:hover .line {
@@ -335,9 +337,11 @@ footer img {
 
 .hamburger.active .line {
 	position: absolute;
-	background-color: var(--grayed-out);
+	background-color: var(--background);
 	top: calc(var(--gutter) - 20px);
+	right: 0;
 	transform: rotate(45deg);
+	height: 1px;
 }
 
 .hamburger.active .second-line {
