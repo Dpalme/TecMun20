@@ -274,11 +274,7 @@ footer img {
 
 .committee .division-line {
 	margin: 10px auto;
-	height: 1px;
-}
-
-.block {
-	display: block;
+	height: 2px;
 }
 
 .committee {
@@ -286,11 +282,15 @@ footer img {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	min-width: 225px;
 	height: 125px;
-	margin: var(--half-gutter) auto;
+	width: 225px;
+	margin: var(--half-gutter);
 	border-radius: 5px;
-	padding: var(--half-gutter);
+	padding: var(--half-gutter) var(--half-col);
+}
+
+.block {
+	display: block;
 }
 
 .flex-col {
@@ -565,6 +565,8 @@ footer img {
 
 .flex-wrap {
 	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	justify-items: center;
 }
 
 .margin-none {
@@ -646,6 +648,34 @@ footer img {
 
 .col-height {
 	height: var(--col);
+}
+
+.col-margin {
+	margin: var(--col);
+}
+
+.col-margin-right {
+	margin-right: var(--col);
+}
+
+.col-margin-bottom {
+	margin-bottom: var(--col);
+}
+
+.col-margin-top {
+	margin-top: var(--col);
+}
+
+.half-col-margin {
+	margin: calc(var(--col) / 2);
+}
+
+.half-col-margin-right {
+	margin-right: calc(var(--col) / 2);
+}
+
+.half-col-margin-bottom {
+	margin-bottom: calc(var(--col) / 2);
 }
 
 .gutter-margin {

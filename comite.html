@@ -12,41 +12,50 @@
 
 <body>
   <header class="white-bg">
-    <a href="../"><img src="img/Logo.svg" /></a>
-
-    <div class="hamburger" id="hamburger"
-      onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');">
-      <div class="line"></div>
-      <div class="line second-line"></div>
-      <div class="line"></div>
+    <a href="./"><img src="img/Logo.svg" /></a>
+    <div class="relative absolute-right">
+      <div class="hamburger" id="hamburger"
+        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');">
+        <div class="line"></div>
+        <div class="line second-line"></div>
+        <div class="line"></div>
+      </div>
     </div>
 
+
     <ul class="nav-links" id="navLinks">
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#Inicio">
-          Inicio
-        </a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#Nosotros">
-          Nosotros
-        </a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#Comites">Comités</a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#FAQ">FAQ</a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
-          href="./#Contacto">Contacto</a>
-      </li>
+      <div class="absolute-centered">
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Inicio">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Nosotros">
+            Nosotros
+          </a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Comites">Comités</a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#FAQ">FAQ</a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Contacto">Contacto</a>
+        </li>
+      </div>
+
       <div class="social-icons flex-row center-horizontal col half-width">
         <a>
           <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +109,7 @@
           </svg>
           CSTSD
         </a>
-        <a class="margin-auto">
+        <a class="margin-auto" href="committees.html">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.0941 9.21875H17.6872C18.9625 9.21875 20 8.18121 20 6.90594V2.31281C20 1.03754 18.9625 0 17.6872 0H13.0941C11.8188 0 10.7812 1.03754 10.7812 2.31281V6.90594C10.7812 8.18121 11.8188 9.21875 13.0941 9.21875ZM12.3438 2.31281C12.3438 1.8991 12.6804 1.5625 13.0941 1.5625H17.6872C18.1009 1.5625 18.4375 1.8991 18.4375 2.31281V6.90594C18.4375 7.31965 18.1009 7.65625 17.6872 7.65625H13.0941C12.6804 7.65625 12.3438 7.31965 12.3438 6.90594V2.31281Z"

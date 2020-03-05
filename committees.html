@@ -11,41 +11,50 @@
 
 <body>
   <header class="white-bg">
-    <a href="../"><img src="img/Logo.svg" /></a>
-
-    <div class="hamburger" id="hamburger"
-      onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');">
-      <div class="line"></div>
-      <div class="line second-line"></div>
-      <div class="line"></div>
+    <a href="./"><img src="img/Logo.svg" /></a>
+    <div class="relative absolute-right">
+      <div class="hamburger" id="hamburger"
+        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');">
+        <div class="line"></div>
+        <div class="line second-line"></div>
+        <div class="line"></div>
+      </div>
     </div>
 
+
     <ul class="nav-links" id="navLinks">
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#Inicio">
-          Inicio
-        </a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#Nosotros">
-          Nosotros
-        </a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#Comites">Comités</a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');" href="./#FAQ">FAQ</a>
-      </li>
-      <li>
-        <a class="header-link main-title centered-text" tabindex="0"
-          onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');"
-          href="./#Contacto">Contacto</a>
-      </li>
+      <div class="absolute-centered">
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Inicio">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Nosotros">
+            Nosotros
+          </a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Comites">Comités</a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#FAQ">FAQ</a>
+        </li>
+        <li>
+          <a class="header-link main-title centered-text" tabindex="0"
+            onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
+            href="#Contacto">Contacto</a>
+        </li>
+      </div>
+
       <div class="social-icons flex-row center-horizontal col half-width">
         <a>
           <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,13 +102,13 @@
       <a class="margin-auto">AEOR</a>
     </div>
     <div class="division-line full-width"></div>
-    <div class="row fifth-width margin-none right small-separator">
+    <div class="row fifth-width margin-none right">
       <a class="margin-auto">ES</a>
       <a class="margin-auto">EN</a>
       <a class="margin-auto">FR</a>
     </div>
 
-    <div class="row full-width flex-wrap gutter-margin-bottom">
+    <div class="row full-width flex-wrap col-margin-top">
       <div class="committee blue-bg">
         <div class="absolute-centered fourth-width">
           <h4 class="white">{{ committee.abreviation }}</h4>
