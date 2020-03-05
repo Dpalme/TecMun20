@@ -54,7 +54,7 @@
             href="#Contacto">Contacto</a>
         </li>
       </div>
-      
+
       <div class="social-icons flex-row center-horizontal col half-width">
         <a>
           <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +97,7 @@
   <!Inicio>
     <div class="fullscreen">
       <a name="Inicio"></a>
-      <div class="fullscreen absolute" style="background-image: url('img/landing-bg.jpg'); background-size: cover; ">
+      <div class="fullscreen" style="background-image: url('img/landing-bg.jpg'); background-size: cover; ">
       </div>
       <div class="fullscreen dark-blue-bg" style="position: absolute; opacity: .4;"></div>
       <div class="hero-title">
@@ -105,7 +105,7 @@
         <h2>1 al 3 de abril 2020</h2>
         <div class="separator"></div>
         <a class="right" href="registro">
-          <div class="button"><text class="button-text">REGISTRARME</text></div>
+          <div class="button"><text class="button-text block">REGISTRARME</text></div>
         </a>
       </div>
       <a href="#Nosotros" onclick="document.querySelector('html').classList.remove('overflow-hidden');">
@@ -130,21 +130,21 @@
 
     <a name="Nosotros"></a>
     <div class="fullscreen" style="background: linear-gradient(var(--background)50%, var(--dark-blue)50%);">
-      <div class="content">
-        <div class="card half-width">
+      <div class="content relative">
+        <div class="card half-width right top-margin">
           <div class="gutter-margin-bottom">
-            <h3>
+            <h3 class="gutter-margin-bottom">
               Nosotros
             </h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              expedita consectetur iste? Amet doloremque magnam perspiciatis autem
-              quaerat quas, labore in! Praesentium rem possimus ducimus
-              voluptatibus doloremque consequuntur unde facere?
+              A lo largo de más de 30 años TECMUN se ha caracterizado por su alto nivel de debates, el alto nivel de
+              preparación de sus mesas, así como fomentar en la juventud el interés por los principales problemas
+              internacionales.<br>
+              Modelo de las Naciones Unidas del Tecnológico de Monterrey, Campus Estado de México.
             </p>
           </div>
           <div>
-            <h4>
+            <h4 class="half-gutter-margin-bottom">
               Meet
             </h4>
             <p>
@@ -239,7 +239,7 @@
           </div>
         </div>
         <a class="center-horizontal" href="committees.html">
-          <div class="button button-text">VER TODOS</div>
+          <div class="button button-text block">VER TODOS</div>
         </a>
       </div>
     </div>
@@ -248,7 +248,7 @@
     <div class="content mid-white-bg">
       <h3>F.A.Q</h3>
       <h4 class="grayed-out separator">Preguntas Frecuentes</h4>
-      <div class="row top-align separator">
+      <div class="row top-align gutter-margin-bottom">
         <div class="col col-3 margin-auto-sides">
           <h4>¿Cómo puedo registrarme?</h4>
           <div class="gutter-margin-bottom"></div>
@@ -269,15 +269,15 @@
         </div>
       </div>
       <a class="center-horizontal" href="faq">
-        <div class="button button-text">VER TODOS</div>
+        <div class="button button-text block">VER TODOS</div>
       </a>
     </div>
 
     <a name="Contacto"></a>
     <div class="fullscreen dark-blue-bg separator">
       <img src="img/kyle-glenn-nXt5HtLmlgE-unsplash.jpg"
-        class="half-width-percent full-height image-cover absolute-right top">
-      <div class="content-width">
+        class="half-width-percent full-height-percent image-cover absolute-right top">
+      <div class="content">
         <div class="col-4 separator">
           <h3 class="white separator">Contacto</h3>
           <div class="row gutter-margin-bottom col-5">
@@ -321,37 +321,37 @@
         <div class="relative">
           <div class="card margin-auto-sides front">
             <h3>Envíanos un mensaje</h3>
-            <p class="half-gutter-margin-bottom">Si tienes alguna pregunta o te gustaría saber algo más de
-              nosotros , nuestro equipo con gusto contestará tus preguntas.</p>
-            <form class="flex-wrap full-width-percent half-gutter-margin-bottom">
-              <div class="col half-gutter-margin-bottom">
+            <p class="gutter-margin-bottom">Si tienes alguna pregunta o te gustaría saber algo más de
+              nosotros, nuestro equipo con gusto contestará tus preguntas.</p>
+            <form class="row flex-wrap full-width-percent half-gutter-margin-bottom">
+              <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Nombre</label>
                 <input type="text" class="col-3 half-gutter-margin-right" required="">
               </div>
-              <div class="col half-gutter-margin-bottom">
+              <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Email</label>
                 <input type="text" class="col-3" required="">
               </div>
-              <div class="col half-gutter-margin-bottom">
+              <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Escuela</label>
                 <input type="text" class="col-3 half-gutter-margin-right" required="">
               </div>
-              <div class="col half-gutter-margin-bottom">
+              <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Celular</label>
                 <input type="text" class="col-3 half-gutter-margin-bottom" required="">
-              </div class="col half-gutter-margin-bottom">
+              </div class="col full-width-percent half-gutter-margin-bottom">
               <label>Mensaje</label>
               <textarea class="special-input body-text full-width-percent" rows="4" required=""></textarea>
             </form>
             <div class="button right" href="registro.html">
-              <a><text class="button-text">Send</text></a>
+              <a><text class="button-text block">Send</text></a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="fullscreen">
+    <div class="half-screen">
       <footer>
         <img src="img/Logo-White.svg" />
         <div class="division-line full-width"></div>
