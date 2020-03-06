@@ -295,16 +295,6 @@ footer img {
 	display: block;
 }
 
-.flex-col {
-	display: flex;
-	flex-direction: column;
-}
-
-.flex-row {
-	display: flex;
-	flex-direction: row !important;
-}
-
 .line {
 	background: var(--font);
 	width: 30px;
@@ -466,6 +456,11 @@ footer img {
 	flex-direction: row;
 	width: var(--inner-grid-width);
 	margin: auto;
+}
+
+.row-force {
+	display: flex;
+	flex-direction: row !important;
 }
 
 .col {
@@ -884,6 +879,10 @@ button {
 	:root {
 		--inner-grid-width: calc(var(--col)*8 + var(--gutter)*7);
 	}
+
+	.row {
+		flex-direction: column;
+	}
 }
 
 /* Tablet */
@@ -907,6 +906,10 @@ button {
 
 	.header-link {
 		font-size: 3rem;
+	}
+	
+	.tablet-hide {
+		display: none;
 	}
 
 	.mobile-hide {
