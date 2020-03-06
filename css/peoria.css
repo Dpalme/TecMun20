@@ -291,6 +291,11 @@ footer img {
 	padding: var(--half-gutter) var(--half-col);
 }
 
+.width-90 {
+	width: 90%;
+	margin: auto;
+}
+
 .block {
 	display: block;
 }

@@ -1,0 +1,21 @@
+*;ASAMBLEA GENERAL
+Reunión de Alto Nivel de la Asamblea General; RANAG; ESPAÑOL
+Primera Comisión de Desarme y Seguridad Internacional; PRIMERA; INGLÉS
+Alto Comisionado de Naciones Unidas para los Refugiados; ACNUR; ESPAÑOL
+Convención de las Naciones Unidas contra la Corrupción; CNUC; ESPAÑOL
+Fondo de las Naciones Unidas para la Infancia; UNICEF; ESPAÑOL
+Historical Trusteeship Council; HTC; INGLÉS
+*;CONSEJO ECONÓMICO Y SOCIAL
+Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura; UNESCO; ESPAÑOL
+European Commission; CE; INGLÉS
+Foro Político de Alto Nivel sobre el Desarrollo Sostenible; FPANDS; ESPAÑOL
+Organisation Internationale de Police Criminelle; INTERPOL; FRANCÉS
+Commission on the Status of Women; UN WOMEN; ESPAÑOL
+United Nations Interregional Crime and Justice Research Institute; UNICRI; INGLÉS
+*;AGENCIAS ESPECIALIZADAS Y ORGANISMOS REGIONALES
+Organización de los Estados Americanos; OEA; ESPAÑOL
+Banco Mundial; BM; ESPAÑOL
+North Atlantic Treaty Organization; NATO; INGLÉS
+Counter-Terrorism Committee; CTC; INGLÉS
+Security Council; SC; INGLÉS
+International Criminal Court; ICC; INGLÉS
