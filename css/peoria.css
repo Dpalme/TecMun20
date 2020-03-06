@@ -772,6 +772,11 @@ button {
 	right: 0;
 }
 
+.absolute-right-grid {
+	position: absolute;
+	right: var(--side-margin);
+}
+
 .absolute-left {
 	position: absolute;
 	left: 0;
