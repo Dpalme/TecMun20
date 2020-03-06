@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>TECMUN XXXIV</title>
   <link rel="stylesheet" href="css/peoria.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body onload="hamburger = document.getElementById('hamburger')">
@@ -129,9 +131,11 @@
     </div>
 
     <a name="Nosotros"></a>
-    <div class="fullscreen" style="background: linear-gradient(var(--background)50%, var(--dark-blue)50%);">
+    <div class="fullscreen back-2" style="background: linear-gradient(var(--background)50%, var(--dark-blue)50%);">
       <div class="content relative">
-        <div class="card half-width right top-margin">
+        <img src="img/about2.JPG" alt="Equipo Tecmun" class="absolute-left absolute-top col-5 back" >
+        <img src="img/about3.JPG" alt="Equipo Tecmun" class="absolute-left-grid two-thirds-vertical col-5 back" >
+        <div class="card col-6 right top-margin">
           <div class="gutter-margin-bottom">
             <h3 class="gutter-margin-bottom">
               Nosotros
@@ -168,79 +172,59 @@
           <a class="margin-auto">AEOR</a>
         </div>
         <div class="division-line full-width"></div>
-        <div class="row fifth-width margin-none right gutter-margin-bottom">
+        <div class="row fifth-width margin-none right">
           <a class="margin-auto">ES</a>
           <a class="margin-auto">EN</a>
           <a class="margin-auto">FR</a>
         </div>
-        <div class="row full-width flex-wrap gutter-margin-bottom">
-          <div class="committee blue-bg">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">NATO</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">North America Trade Organization</p>
+
+        <div class="row full-width flex-wrap col-margin">
+          <div class="flex-item relative">
+            <div class="committee blue-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent">NATO</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class="white small-body">North America Trade Organization</p>
+              </div>
             </div>
           </div>
-
-          <div class="committee red-bg">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">ABREVIATION</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">FULL COMMITTEE NAME</p>
+    
+          <div class="flex-item relative">
+            <div class="committee red-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent">NATO</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class="white small-body">North America Trade Organization</p>
+              </div>
             </div>
           </div>
-
-          <div class="committee orange-bg">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">ABREVIATION</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">FULL COMMITTEE NAME</p>
+    
+          <div class="flex-item relative">
+            <div class="committee green-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent">NATO</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class="white small-body">North America Trade Organization</p>
+              </div>
             </div>
           </div>
-
-          <div class="committee green-bg">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">ABREVIATION</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">FULL COMMITTEE NAME</p>
-            </div>
-          </div>
-
-          <div class="committee yellow-bg">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">ABREVIATION</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">FULL COMMITTEE NAME</p>
-            </div>
-          </div>
-
-          <div class="committee green-bg">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">ABREVIATION</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">FULL COMMITTEE NAME</p>
-            </div>
-          </div>
-
-          <div class="committee blue-bg mobile-hide">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">ABREVIATION</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">FULL COMMITTEE NAME</p>
-            </div>
-          </div>
-
-          <div class="committee yellow-bg mobile-hide">
-            <div class="absolute-centered fourth-width">
-              <h4 class="white">ABREVIATION</h4>
-              <div class="division-line mid-white-bg"></div>
-              <p class="white small-body">FULL COMMITTEE NAME</p>
+    
+          <div class="flex-item relative">
+            <div class="committee yellow-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent">NATO</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class="white small-body">North America Trade Organization</p>
+              </div>
             </div>
           </div>
         </div>
+        
         <a class="center-horizontal" href="committees.html">
           <div class="button button-text block">VER TODOS</div>
         </a>
+      
+      
       </div>
     </div>
 
@@ -274,10 +258,10 @@
     </div>
 
     <a name="Contacto"></a>
-    <div class="fullscreen dark-blue-bg separator">
+    <div class="fullscreen">
       <img src="img/kyle-glenn-nXt5HtLmlgE-unsplash.jpg"
-        class="half-width-percent full-height-percent image-cover absolute-right top">
-      <div class="content">
+          class="half-width-percent full-height-percent image-cover absolute-right top">
+      <div class="content-width dark-blue-bg separator" style="background: linear-gradient(var(--dark-blue)50%, var(--background)50%);">
         <div class="col-4 separator">
           <h3 class="white separator">Contacto</h3>
           <div class="row gutter-margin-bottom col-5">
@@ -326,19 +310,19 @@
             <form class="row flex-wrap full-width-percent half-gutter-margin-bottom">
               <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Nombre</label>
-                <input type="text" class="col-3 half-gutter-margin-right" required="">
+                <input type="text" class="col-4 half-gutter-margin-right" required="">
               </div>
               <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Email</label>
-                <input type="text" class="col-3" required="">
+                <input type="text" class="col-4" required="">
               </div>
               <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Escuela</label>
-                <input type="text" class="col-3 half-gutter-margin-right" required="">
+                <input type="text" class="col-4 half-gutter-margin-right" required="">
               </div>
               <div class="col half-width-percent half-gutter-margin-bottom">
                 <label>Celular</label>
-                <input type="text" class="col-3 half-gutter-margin-bottom" required="">
+                <input type="text" class="col-4 half-gutter-margin-bottom" required="">
               </div class="col full-width-percent half-gutter-margin-bottom">
               <label>Mensaje</label>
               <textarea class="special-input body-text full-width-percent" rows="4" required=""></textarea>
@@ -349,17 +333,14 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="half-screen">
       <footer>
         <img src="img/Logo-White.svg" />
         <div class="division-line full-width"></div>
         <div class="flex-row margin-auto center-horizontal">
           <div class="flex-row col col-4 white margin-auto">
-            <a style="margin: auto">Inicio</a>
-            <a style="margin: auto">FAQ</a>
-            <a style="margin: auto">Comités</a>
+            <a href="./" style="margin: auto">Inicio</a>
+            <a href="./faq.html" style="margin: auto">FAQ</a>
+            <a href="./committees.html" style="margin: auto">Comités</a>
           </div>
           <p class="col col-4 links white margin-auto">©2020 TECMUN</p>
           <div class="social-icons flex-row col col-4 margin-auto">
@@ -401,6 +382,7 @@
         </div>
       </footer>
     </div>
+    
 </body>
 
 </html>
