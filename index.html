@@ -7,23 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>TECMUN XXXIV</title>
   <link rel="stylesheet" href="https://dpalme.github.io/Peoria/normalize.css">
-	<link rel="stylesheet" href="https://dpalme.github.io/Peoria/peoria.css">
+  <link rel="stylesheet" href="https://dpalme.github.io/Peoria/peoria.css">
+  <link rel="stylesheet" href="css/custom-styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
 <body onload="hamburger = document.getElementById('hamburger')">
-  <header class="col-height">
-    <img src="img/Logo.svg" class="double-col"/>
-    <div class="relative absolute-right">
-      <div class="hamburger" id="hamburger"
-        onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active');">
+  <header class="col-height fixed front-2">
+    <div class="container">
+      <div class="hamburger" onclick="document.querySelector('ul').classList.toggle('open');">
         <div class="line"></div>
-        <div class="line second-line"></div>
+        <div class="line"></div>
         <div class="line"></div>
       </div>
+      <img src="img/Logo.svg" class="gutter-height half-gutter-padding-vertical" />
     </div>
-
 
     <ul class="nav-links" id="navLinks">
       <div class="absolute-centered">
@@ -97,13 +96,15 @@
     </ul>
   </header>
 
-  <!Inicio>
-    <div class="fullscreen">
-      <a name="Inicio"></a>
-      <div class="fullscreen" style="background-image: url('img/landing-bg.jpg'); background-size: cover; ">
-      </div>
-      <div class="fullscreen dark-blue-bg" style="position: absolute; opacity: .4;"></div>
-      <div class="hero-title">
+  <!Inicio />
+  <div class="fullscreen relative>
+      <a name=" Inicio"></a>
+    <div class="fullscreen absolute back-2"
+      style="background-image: url('img/landing-bg.jpg'); background-size: cover;">
+    </div>
+    <div class="fullscreen dark-blue-bg absolute back" style="opacity: .4;"></div>
+    <div class="container">
+      <div class="one-third column two-thirds-offset quarter-screen-margin">
         <h1>XXXV TECMUN</h1>
         <h2>1 al 3 de abril 2020</h2>
         <div class="separator"></div>
@@ -111,337 +112,344 @@
           <div class="button"><text class="button-text block">REGISTRARME</text></div>
         </a>
       </div>
-      <a href="#Nosotros" onclick="document.querySelector('html').classList.remove('overflow-hidden');">
-        <svg width="30" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
-          class="bottom-center">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M24.841 11.0295C24.6291 10.8175 24.2845 10.8175 24.0725 11.0295L12.5006 22.6014L0.927483 11.0295C0.715522 10.8175 0.370932 10.8175 0.158971 11.0295C-0.0529903 11.2414 -0.0529903 11.586 0.158971 11.798L12.1158 23.7548C12.2223 23.8602 12.3614 23.9135 12.5006 23.9135C12.6397 23.9135 12.7788 23.8603 12.8843 23.7548L24.8411 11.798C25.053 11.586 25.053 11.2414 24.841 11.0295Z"
-              fill="white" />
-            <path
-              d="M24.841 1.24552C24.6291 1.03356 24.2845 1.03356 24.0725 1.24552L12.5006 12.8186L0.927483 1.24664C0.715522 1.03468 0.370932 1.03468 0.158971 1.24664C-0.0529903 1.4586 -0.0529903 1.80319 0.158971 2.01515L12.1158 13.972C12.2223 14.0774 12.3614 14.1307 12.5006 14.1307C12.6397 14.1307 12.7788 14.0774 12.8843 13.9709L24.841 2.01403C25.053 1.80207 25.053 1.45748 24.841 1.24552Z"
-              fill="white" />
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="25" height="25" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      </a>
     </div>
-
-    <a name="Nosotros"></a>
-    <div class="fullscreen back-2" style="background: linear-gradient(var(--background)50%, var(--dark-blue)50%);">
-      <div class="content relative">
-        <img src="img/about2.JPG" alt="Equipo Tecmun" class="absolute-left absolute-top col-5 back">
-        <img src="img/about3.JPG" alt="Equipo Tecmun" class="absolute-left-grid top-margin col-5 back">
-        <div class="card col-7 absolute-right-grid">
-          <div class="gutter-margin-bottom">
-            <h3 class="gutter-margin-bottom">
-              Nosotros
-            </h3>
-            <p>
-              TECMUN es una simulación del período de sesiones plenarias de la Organización de las Naciones Unidas, así
-              como de otras organizaciones intergubernamentales.<br>
-              Buscamos que estudiantes de diversas instituciones educativas exploren, analizen y debatan asuntos
-              bélicos, culturales, sociales, ambientales, científicos, humanitarios o económicos, que se encuentren
-              presentes en la agenda internacional.
-            </p>
-          </div>
-          <div>
-            <h4 class="half-gutter-margin-bottom">
-              Meet
-            </h4>
-            <p>
-              El XXVII TECMUN Jr. contará con 22 diferentes salas de debate. El modelo está dirigido a estudiantes de
-              secundarias y preparatorias nacionales e internacionales. Los estudiantes de preparatoria podrán
-              participar en los comités especializados.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a name="Comites"></a>
-    <div class="content">
-      <div class="flex-wrap">
-        <h3 class="gutter-margin-bottom">Comités</h3>
-        <div class="row-force col-4 margin-auto">
-          <a class="margin-auto">AG</a>
-          <a class="margin-auto">ECOSOC</a>
-          <a class="margin-auto">AEOR</a>
-        </div>
-        <div class="division-line full-width"></div>
-
-        <div class="row full-width flex-wrap gutter-margin-bottom">
-          <div class="row full-width flex-wrap">
-    
-            <div class="flex-item relative">
-              <div class="committee blue-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> RANAG</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">Reunión de Alto Nivel de la Asamblea General</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee blue-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> PRIMERA</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">Primera Comisión de Desarme y Seguridad Internacional</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee blue-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> HTC</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">Historical Trusteeship Council</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee green-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> UNESCO</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee green-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> UN WOMEN</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">Commission on the Status of Women</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee green-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> UNICRI</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">United Nations Interregional Crime and Justice Research Institute</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee red-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> BM</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">Banco Mundial</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee red-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> NATO</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">North Atlantic Treaty Organization</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex-item relative">
-              <div class="committee red-bg relative">
-                <div class="absolute-centered full-width-percent">
-                  <h4 class="white full-width-percent"> SC</h4>
-                  <div class="division-line mid-white-bg"></div>
-                  <p class=" white small-body width-90">Security Council</p>
-                </div>
-              </div>
-            </div>
-              
-          </div>
-        </div>
-
-        <a class="center-horizontal" href="committees.html">
-          <div class="button button-text block">VER TODOS</div>
+    <div class="full column">
+      <div class="two columns five-offset">
+        <a href="#Nosotros" onclick="document.querySelector('html').classList.remove('overflow-hidden');">
+          <svg width="30" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="bottom-center">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M24.841 11.0295C24.6291 10.8175 24.2845 10.8175 24.0725 11.0295L12.5006 22.6014L0.927483 11.0295C0.715522 10.8175 0.370932 10.8175 0.158971 11.0295C-0.0529903 11.2414 -0.0529903 11.586 0.158971 11.798L12.1158 23.7548C12.2223 23.8602 12.3614 23.9135 12.5006 23.9135C12.6397 23.9135 12.7788 23.8603 12.8843 23.7548L24.8411 11.798C25.053 11.586 25.053 11.2414 24.841 11.0295Z"
+                fill="white" />
+              <path
+                d="M24.841 1.24552C24.6291 1.03356 24.2845 1.03356 24.0725 1.24552L12.5006 12.8186L0.927483 1.24664C0.715522 1.03468 0.370932 1.03468 0.158971 1.24664C-0.0529903 1.4586 -0.0529903 1.80319 0.158971 2.01515L12.1158 13.972C12.2223 14.0774 12.3614 14.1307 12.5006 14.1307C12.6397 14.1307 12.7788 14.0774 12.8843 13.9709L24.841 2.01403C25.053 1.80207 25.053 1.45748 24.841 1.24552Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="25" height="25" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
         </a>
-
-
       </div>
     </div>
+  </div>
 
-    <a name="FAQ"></a>
-    <div class="content mid-white-bg">
-      <h3>F.A.Q</h3>
-      <h4 class="grayed-out separator">Preguntas Frecuentes</h4>
-      <div class="row top-align gutter-margin-bottom">
-        <div class="flex-item gutter-margin-bottom">
-          <div class="col-4">
-            <h3 class="small-separator">¿Qué es un Modelo de las Naciones Unidas? </h3>
-            <p>Es una simulación de los comités de la Organización de las Naciones Unidas y otras organizaciones
-              intergubernamentales aliadas a esta, donde los y las participantes asumen el papel de diplomáticos y
-              debaten para llegar a una hoja resolución capaz solventar las problemáticas que están discutiendo.
-            </p>
-          </div>
+  <a name="Nosotros"></a>
+  <div class="fullscreen back-2" style="background: linear-gradient(var(--background)50%, var(--dark-blue)50%);">
+    <div class="container relative">
+      <img src="img/about2.JPG" alt="Equipo Tecmun" class="double-col-width absolute-top back">
+      <img src="img/about3.JPG" alt="Equipo Tecmun" class="double-col-width absolute-top back">
+      <div class="card seven columns">
+        <div class="gutter-margin-bottom">
+          <h3 class="gutter-margin-bottom">
+            Nosotros
+          </h3>
+          <p>
+            TECMUN es una simulación del período de sesiones plenarias de la Organización de las Naciones Unidas, así
+            como de otras organizaciones intergubernamentales.<br>
+            Buscamos que estudiantes de diversas instituciones educativas exploren, analizen y debatan asuntos
+            bélicos, culturales, sociales, ambientales, científicos, humanitarios o económicos, que se encuentren
+            presentes en la agenda internacional.
+          </p>
         </div>
-        <div class="flex-item gutter-margin-bottom">
-          <div class="col-4 right">
-            <h3 class="small-separator">¿Cuáles son los beneficios pedagógicos?</h3>
-            <p>Estimula el desarrollo de aptitudes académicas e interpersonales en los participantes como
-              habilidades de oratoria y debate, investigación, diálogo formal, redacción; facilita la formulación de
-              argumentos sólidos basados en información fáctica, promueve el liderazgo e incentiva a sus alumnos a
-              ser ciudadanos responsables y socialmente participativos.</p>
-          </div>
-        </div>
-        <div class="flex-item gutter-margin-bottom">
-          <div class="col-4 right">
-            <h3 class="small-separator">¿Cuánto cuesta?</h3>
-            <p>$300 MXN. Puede hacer el pago en línea siguiendo los pasos que se adjuntan en el documento que le
-              enviaré por correo (explicas cuál es el nombre del documento).<br>
-              Es importante mencionar que el pago se debe realizar unicamente después de recibir la confirmación de
-              su asignación. En caso de efectuarlo antes no se tomará en cuenta para asegurar sus asignaciones.</p>
-          </div>
+        <div>
+          <h4 class="half-gutter-margin-bottom">
+            Meet
+          </h4>
+          <p>
+            El XXVII TECMUN Jr. contará con 22 diferentes salas de debate. El modelo está dirigido a estudiantes de
+            secundarias y preparatorias nacionales e internacionales. Los estudiantes de preparatoria podrán
+            participar en los comités especializados.
+          </p>
         </div>
       </div>
-      <a class="center-horizontal" href="faq.html">
+    </div>
+  </div>
+
+  <a name="Comites"></a>
+  <div class="content">
+    <div class="flex-wrap">
+      <h3 class="gutter-margin-bottom">Comités</h3>
+      <div class="row-force col-4 margin-auto">
+        <a class="margin-auto">AG</a>
+        <a class="margin-auto">ECOSOC</a>
+        <a class="margin-auto">AEOR</a>
+      </div>
+      <div class="division-line full-width"></div>
+
+      <div class="row full-width flex-wrap gutter-margin-bottom">
+        <div class="row full-width flex-wrap">
+
+          <div class="flex-item relative">
+            <div class="committee blue-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> RANAG</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">Reunión de Alto Nivel de la Asamblea General</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee blue-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> PRIMERA</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">Primera Comisión de Desarme y Seguridad Internacional</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee blue-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> HTC</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">Historical Trusteeship Council</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee green-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> UNESCO</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">Organización de las Naciones Unidas para la Educación, la Ciencia
+                  y la Cultura</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee green-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> UN WOMEN</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">Commission on the Status of Women</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee green-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> UNICRI</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">United Nations Interregional Crime and Justice Research Institute
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee red-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> BM</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">Banco Mundial</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee red-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> NATO</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">North Atlantic Treaty Organization</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item relative">
+            <div class="committee red-bg relative">
+              <div class="absolute-centered full-width-percent">
+                <h4 class="white full-width-percent"> SC</h4>
+                <div class="division-line mid-white-bg"></div>
+                <p class=" white small-body width-90">Security Council</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a class="center-horizontal" href="committees.html">
         <div class="button button-text block">VER TODOS</div>
       </a>
-    </div>
 
-    <a name="Contacto"></a>
-    <div class="fullscreen">
-      <img src="img/kyle-glenn-nXt5HtLmlgE-unsplash.jpg"
-        class="half-width-percent full-height-percent image-cover absolute-right top tablet-hide">
-      <div class="content-width dark-blue-bg separator"
-        style="background: linear-gradient(var(--dark-blue)50%, var(--background)50%);">
-        <div class="col-4 separator">
-          <h3 class="white separator">Contacto</h3>
-          <div class="row gutter-margin-bottom col-5">
-            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="half-gutter-margin col-1">
-              <path
-                d="M21.75 0.197021H2.25C1.00781 0.197021 0 1.20549 0 2.44849V15.9573C0 17.2003 1.00781 18.2087 2.25 18.2087H21.75C22.9922 18.2087 24 17.2003 24 15.9573V2.44849C24 1.20549 22.9922 0.197021 21.75 0.197021ZM2.25 1.698H21.75C22.1625 1.698 22.5 2.03572 22.5 2.44849V4.39037C21.4734 5.25812 20.0063 6.45422 15.4406 10.08C14.6484 10.7085 13.0875 12.2236 12 12.2048C10.9125 12.2236 9.34688 10.7085 8.55938 10.08C3.99375 6.45422 2.52656 5.25812 1.5 4.39037V2.44849C1.5 2.03572 1.8375 1.698 2.25 1.698ZM21.75 16.7078H2.25C1.8375 16.7078 1.5 16.37 1.5 15.9573V6.34164C2.56875 7.21877 4.25625 8.57434 7.62656 11.2526C8.5875 12.0219 10.2844 13.7152 12 13.7058C13.7063 13.7199 15.3891 12.0407 16.3734 11.2526C19.7437 8.57434 21.4312 7.21877 22.5 6.34164V15.9573C22.5 16.37 22.1625 16.7078 21.75 16.7078Z"
-                fill="#C4C4C4" />
-            </svg>
-            <div class="col col-4">
-              <h4 class="white">Email</h4>
-              <p class="white">tecmun@gmail.com</p>
-            </div>
-          </div>
-          <div class="row gutter-margin-bottom col-5">
-            <svg width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="half-gutter-margin col-1">
-              <path
-                d="M13.125 5.87842V19.9501H5.625V5.87842H13.125ZM15.9375 0.249756H2.8125C1.25977 0.249756 0 1.51034 0 3.06409V27.4549C0 29.0087 1.25977 30.2693 2.8125 30.2693H15.9375C17.4902 30.2693 18.75 29.0087 18.75 27.4549V3.06409C18.75 1.51034 17.4902 0.249756 15.9375 0.249756ZM2.8125 28.3931C2.29687 28.3931 1.875 27.9709 1.875 27.4549V3.06409C1.875 2.54813 2.29687 2.12598 2.8125 2.12598H15.9375C16.4531 2.12598 16.875 2.54813 16.875 3.06409V27.4549C16.875 27.9709 16.4531 28.3931 15.9375 28.3931H2.8125ZM14.2969 4.0022H4.45312C4.06641 4.0022 3.75 4.31881 3.75 4.70578V21.1227C3.75 21.5097 4.06641 21.8263 4.45312 21.8263H14.2969C14.6836 21.8263 15 21.5097 15 21.1227V4.70578C15 4.31881 14.6836 4.0022 14.2969 4.0022ZM11.4844 24.6406H7.26562C6.87891 24.6406 6.5625 24.9572 6.5625 25.3442V25.8133C6.5625 26.2002 6.87891 26.5168 7.26562 26.5168H11.4844C11.8711 26.5168 12.1875 26.2002 12.1875 25.8133V25.3442C12.1875 24.9572 11.8711 24.6406 11.4844 24.6406Z"
-                fill="#C4C4C4" />
-            </svg>
-            <div class="col col-4">
-              <h4 class="white">Teléfono</h4>
-              <p class="white">(55) 5864 5555 ext. 5191</p>
-            </div>
-          </div>
-          <div class="row gutter-margin-bottom col-5">
-            <svg width="22" height="31" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="half-gutter-margin col-1">
-              <path
-                d="M10.9091 5.93897C7.90142 5.93897 5.45455 8.46395 5.45455 11.5676C5.45455 14.6713 7.90142 17.1963 10.9091 17.1963C13.9168 17.1963 16.3636 14.6713 16.3636 11.5676C16.3636 8.46395 13.9168 5.93897 10.9091 5.93897ZM10.9091 15.3201C8.90398 15.3201 7.27273 13.6367 7.27273 11.5676C7.27273 9.49851 8.90398 7.81519 10.9091 7.81519C12.9142 7.81519 14.5455 9.49851 14.5455 11.5676C14.5455 13.6367 12.9142 15.3201 10.9091 15.3201ZM10.9091 0.310303C4.88415 0.310303 0 5.35036 0 11.5676C0 16.1065 1.53239 17.374 9.78796 29.7242C10.3297 30.5316 11.4885 30.5318 12.0303 29.7242C20.2858 17.374 21.8182 16.1065 21.8182 11.5676C21.8182 5.35036 16.934 0.310303 10.9091 0.310303ZM10.9091 28.0978C2.9946 16.2868 1.81818 15.349 1.81818 11.5676C1.81818 9.06182 2.76381 6.70605 4.48085 4.93419C6.1979 3.16233 8.4808 2.18652 10.9091 2.18652C13.3374 2.18652 15.6203 3.16233 17.3373 4.93419C19.0544 6.70605 20 9.06182 20 11.5676C20 15.3488 18.8243 16.2857 10.9091 28.0978Z"
-                fill="#C4C4C4" />
-            </svg>
-            <div class="col col-4">
-              <h4 class="white">Ubicación</h4>
-              <p class="white">Av Lago de Guadalupe KM 3.5, Margarita Maza de Juárez, 52926 Cd López Mateos, Méx.</p>
-            </div>
+
+    </div>
+  </div>
+
+  <a name="FAQ"></a>
+  <div class="content mid-white-bg">
+    <h3>F.A.Q</h3>
+    <h4 class="grayed-out separator">Preguntas Frecuentes</h4>
+    <div class="row top-align gutter-margin-bottom">
+      <div class="flex-item gutter-margin-bottom">
+        <div class="col-4">
+          <h3 class="small-separator">¿Qué es un Modelo de las Naciones Unidas? </h3>
+          <p>Es una simulación de los comités de la Organización de las Naciones Unidas y otras organizaciones
+            intergubernamentales aliadas a esta, donde los y las participantes asumen el papel de diplomáticos y
+            debaten para llegar a una hoja resolución capaz solventar las problemáticas que están discutiendo.
+          </p>
+        </div>
+      </div>
+      <div class="flex-item gutter-margin-bottom">
+        <div class="col-4 right">
+          <h3 class="small-separator">¿Cuáles son los beneficios pedagógicos?</h3>
+          <p>Estimula el desarrollo de aptitudes académicas e interpersonales en los participantes como
+            habilidades de oratoria y debate, investigación, diálogo formal, redacción; facilita la formulación de
+            argumentos sólidos basados en información fáctica, promueve el liderazgo e incentiva a sus alumnos a
+            ser ciudadanos responsables y socialmente participativos.</p>
+        </div>
+      </div>
+      <div class="flex-item gutter-margin-bottom">
+        <div class="col-4 right">
+          <h3 class="small-separator">¿Cuánto cuesta?</h3>
+          <p>$300 MXN. Puede hacer el pago en línea siguiendo los pasos que se adjuntan en el documento que le
+            enviaré por correo (explicas cuál es el nombre del documento).<br>
+            Es importante mencionar que el pago se debe realizar unicamente después de recibir la confirmación de
+            su asignación. En caso de efectuarlo antes no se tomará en cuenta para asegurar sus asignaciones.</p>
+        </div>
+      </div>
+    </div>
+    <a class="center-horizontal" href="faq.html">
+      <div class="button button-text block">VER TODOS</div>
+    </a>
+  </div>
+
+  <a name="Contacto"></a>
+  <div class="fullscreen">
+    <img src="img/kyle-glenn-nXt5HtLmlgE-unsplash.jpg"
+      class="half-width-percent full-height-percent image-cover absolute-right top tablet-hide">
+    <div class="content-width dark-blue-bg separator"
+      style="background: linear-gradient(var(--dark-blue)50%, var(--background)50%);">
+      <div class="col-4 separator">
+        <h3 class="white separator">Contacto</h3>
+        <div class="row gutter-margin-bottom col-5">
+          <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="half-gutter-margin col-1">
+            <path
+              d="M21.75 0.197021H2.25C1.00781 0.197021 0 1.20549 0 2.44849V15.9573C0 17.2003 1.00781 18.2087 2.25 18.2087H21.75C22.9922 18.2087 24 17.2003 24 15.9573V2.44849C24 1.20549 22.9922 0.197021 21.75 0.197021ZM2.25 1.698H21.75C22.1625 1.698 22.5 2.03572 22.5 2.44849V4.39037C21.4734 5.25812 20.0063 6.45422 15.4406 10.08C14.6484 10.7085 13.0875 12.2236 12 12.2048C10.9125 12.2236 9.34688 10.7085 8.55938 10.08C3.99375 6.45422 2.52656 5.25812 1.5 4.39037V2.44849C1.5 2.03572 1.8375 1.698 2.25 1.698ZM21.75 16.7078H2.25C1.8375 16.7078 1.5 16.37 1.5 15.9573V6.34164C2.56875 7.21877 4.25625 8.57434 7.62656 11.2526C8.5875 12.0219 10.2844 13.7152 12 13.7058C13.7063 13.7199 15.3891 12.0407 16.3734 11.2526C19.7437 8.57434 21.4312 7.21877 22.5 6.34164V15.9573C22.5 16.37 22.1625 16.7078 21.75 16.7078Z"
+              fill="#C4C4C4" />
+          </svg>
+          <div class="col col-4">
+            <h4 class="white">Email</h4>
+            <p class="white">tecmun@gmail.com</p>
           </div>
         </div>
-        <div class="relative">
-          <div class="card margin-auto-sides front">
-            <h3>Envíanos un mensaje</h3>
-            <p class="gutter-margin-bottom">Si tienes alguna pregunta o te gustaría saber algo más de
-              nosotros, nuestro equipo con gusto contestará tus preguntas.</p>
-            <form class="row flex-wrap full-width-percent half-gutter-margin-bottom">
-              <div class="col half-width-percent half-gutter-margin-bottom">
-                <label>Nombre</label>
-                <input type="text" class="col-4 half-gutter-margin-right" required="">
-              </div>
-              <div class="col half-width-percent half-gutter-margin-bottom">
-                <label>Email</label>
-                <input type="text" class="col-4" required="">
-              </div>
-              <div class="col half-width-percent half-gutter-margin-bottom">
-                <label>Escuela</label>
-                <input type="text" class="col-4 half-gutter-margin-right" required="">
-              </div>
-              <div class="col half-width-percent half-gutter-margin-bottom">
-                <label>Celular</label>
-                <input type="text" class="col-4 half-gutter-margin-bottom" required="">
-              </div class="col full-width-percent half-gutter-margin-bottom">
-              <label>Mensaje</label>
-              <textarea class="special-input body-text full-width-percent" rows="4" required=""></textarea>
-            </form>
-            <div class="button right" href="registro.html">
-              <a><text class="button-text block">Send</text></a>
-            </div>
+        <div class="row gutter-margin-bottom col-5">
+          <svg width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="half-gutter-margin col-1">
+            <path
+              d="M13.125 5.87842V19.9501H5.625V5.87842H13.125ZM15.9375 0.249756H2.8125C1.25977 0.249756 0 1.51034 0 3.06409V27.4549C0 29.0087 1.25977 30.2693 2.8125 30.2693H15.9375C17.4902 30.2693 18.75 29.0087 18.75 27.4549V3.06409C18.75 1.51034 17.4902 0.249756 15.9375 0.249756ZM2.8125 28.3931C2.29687 28.3931 1.875 27.9709 1.875 27.4549V3.06409C1.875 2.54813 2.29687 2.12598 2.8125 2.12598H15.9375C16.4531 2.12598 16.875 2.54813 16.875 3.06409V27.4549C16.875 27.9709 16.4531 28.3931 15.9375 28.3931H2.8125ZM14.2969 4.0022H4.45312C4.06641 4.0022 3.75 4.31881 3.75 4.70578V21.1227C3.75 21.5097 4.06641 21.8263 4.45312 21.8263H14.2969C14.6836 21.8263 15 21.5097 15 21.1227V4.70578C15 4.31881 14.6836 4.0022 14.2969 4.0022ZM11.4844 24.6406H7.26562C6.87891 24.6406 6.5625 24.9572 6.5625 25.3442V25.8133C6.5625 26.2002 6.87891 26.5168 7.26562 26.5168H11.4844C11.8711 26.5168 12.1875 26.2002 12.1875 25.8133V25.3442C12.1875 24.9572 11.8711 24.6406 11.4844 24.6406Z"
+              fill="#C4C4C4" />
+          </svg>
+          <div class="col col-4">
+            <h4 class="white">Teléfono</h4>
+            <p class="white">(55) 5864 5555 ext. 5191</p>
+          </div>
+        </div>
+        <div class="row gutter-margin-bottom col-5">
+          <svg width="22" height="31" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="half-gutter-margin col-1">
+            <path
+              d="M10.9091 5.93897C7.90142 5.93897 5.45455 8.46395 5.45455 11.5676C5.45455 14.6713 7.90142 17.1963 10.9091 17.1963C13.9168 17.1963 16.3636 14.6713 16.3636 11.5676C16.3636 8.46395 13.9168 5.93897 10.9091 5.93897ZM10.9091 15.3201C8.90398 15.3201 7.27273 13.6367 7.27273 11.5676C7.27273 9.49851 8.90398 7.81519 10.9091 7.81519C12.9142 7.81519 14.5455 9.49851 14.5455 11.5676C14.5455 13.6367 12.9142 15.3201 10.9091 15.3201ZM10.9091 0.310303C4.88415 0.310303 0 5.35036 0 11.5676C0 16.1065 1.53239 17.374 9.78796 29.7242C10.3297 30.5316 11.4885 30.5318 12.0303 29.7242C20.2858 17.374 21.8182 16.1065 21.8182 11.5676C21.8182 5.35036 16.934 0.310303 10.9091 0.310303ZM10.9091 28.0978C2.9946 16.2868 1.81818 15.349 1.81818 11.5676C1.81818 9.06182 2.76381 6.70605 4.48085 4.93419C6.1979 3.16233 8.4808 2.18652 10.9091 2.18652C13.3374 2.18652 15.6203 3.16233 17.3373 4.93419C19.0544 6.70605 20 9.06182 20 11.5676C20 15.3488 18.8243 16.2857 10.9091 28.0978Z"
+              fill="#C4C4C4" />
+          </svg>
+          <div class="col col-4">
+            <h4 class="white">Ubicación</h4>
+            <p class="white">Av Lago de Guadalupe KM 3.5, Margarita Maza de Juárez, 52926 Cd López Mateos, Méx.</p>
           </div>
         </div>
       </div>
-
-      <footer>
-        <img src="img/Logo-White.svg" />
-        <div class="division-line full-width"></div>
-        <div class="row margin-auto center-horizontal">
-          <div class="row col-4 white margin-auto gutter-margin-bottom>
-            <a href=" ./" style="margin: auto">Inicio</a>
-            <a href="./faq.html" style="margin: auto">FAQ</a>
-            <a href="./committees.html" style="margin: auto">Comités</a>
-          </div>
-          <p class="col col-4 links white margin-auto gutter-margin-bottom  ">©2020 TECMUN</p>
-          <div class="social-icons row col-4 margin-auto">
-            <a>
-              <svg height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a>
-              <svg height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3.5 1.75C3.5 2.7165 2.7165 3.5 1.75 3.5C0.783502 3.5 0 2.7165 0 1.75C0 0.783502 0.783502 0 1.75 0C2.7165 0 3.5 0.783502 3.5 1.75ZM0 5H3.578V16H0V5ZM13.2998 5.12119C13.2954 5.11973 13.2909 5.11825 13.2864 5.11678C13.2616 5.10856 13.2367 5.10033 13.21 5.093C13.162 5.082 13.114 5.073 13.065 5.065C12.875 5.027 12.667 5 12.423 5C10.337 5 9.014 6.517 8.578 7.103V5H5V16H8.578V10C8.578 10 11.282 6.234 12.423 9V16H16V8.577C16 6.915 14.861 5.53 13.324 5.129C13.3159 5.12643 13.3078 5.12382 13.2998 5.12119Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a>
-              <svg height="16" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16 1.87231C15.405 2.13331 14.771 2.30631 14.11 2.39031C14.79 1.98431 15.309 1.34631 15.553 0.577313C14.919 0.955313 14.219 1.22231 13.473 1.37131C12.871 0.730313 12.013 0.333313 11.077 0.333313C9.261 0.333313 7.799 1.80731 7.799 3.61431C7.799 3.87431 7.821 4.12431 7.875 4.36231C5.148 4.22931 2.735 2.92231 1.114 0.931313C0.831 1.42231 0.665 1.98431 0.665 2.58931C0.665 3.72531 1.25 4.73231 2.122 5.31531C1.595 5.30531 1.078 5.15231 0.64 4.91131C0.64 4.92131 0.64 4.93431 0.64 4.94731C0.64 6.54131 1.777 7.86531 3.268 8.17031C3.001 8.24331 2.71 8.27831 2.408 8.27831C2.198 8.27831 1.986 8.26631 1.787 8.22231C2.212 9.52131 3.418 10.4763 4.852 10.5073C3.736 11.3803 2.319 11.9063 0.785 11.9063C0.516 11.9063 0.258 11.8943 0 11.8613C1.453 12.7983 3.175 13.3333 5.032 13.3333C11.068 13.3333 14.368 8.33331 14.368 3.99931C14.368 3.85431 14.363 3.71431 14.356 3.57531C15.007 3.11331 15.554 2.53631 16 1.87231Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a>
-              <svg height="16" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M13.456 0.758687C14.415 0.812687 14.886 0.954687 15.32 1.72669C15.772 2.49769 16 3.82569 16 6.16469V6.16769V6.17269C16 8.50069 15.772 9.83869 15.321 10.6017C14.887 11.3737 14.416 11.5137 13.457 11.5787C12.498 11.6337 10.089 11.6667 8.002 11.6667C5.911 11.6667 3.501 11.6337 2.543 11.5777C1.586 11.5127 1.115 11.3727 0.677 10.6007C0.23 9.83769 0 8.49969 0 6.17169V6.16969V6.16669V6.16369C0 3.82569 0.23 2.49769 0.677 1.72669C1.115 0.953687 1.587 0.812687 2.544 0.757687C3.501 0.693687 5.911 0.666687 8.002 0.666687C10.089 0.666687 12.498 0.693687 13.456 0.758687ZM11 6.16669L6 3.16669V9.16669L11 6.16669Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a>
-              <svg height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M5 0H11C13.761 0 16 2.239 16 5V11C16 13.761 13.761 16 11 16H5C2.239 16 0 13.761 0 11V5C0 2.239 2.239 0 5 0ZM11 14.5C12.93 14.5 14.5 12.93 14.5 11V5C14.5 3.07 12.93 1.5 11 1.5H5C3.07 1.5 1.5 3.07 1.5 5V11C1.5 12.93 3.07 14.5 5 14.5H11ZM4 8C4 5.791 5.791 4 8 4C10.209 4 12 5.791 12 8C12 10.209 10.209 12 8 12C5.791 12 4 10.209 4 8ZM5.5 8C5.5 9.378 6.622 10.5 8 10.5C9.378 10.5 10.5 9.378 10.5 8C10.5 6.621 9.378 5.5 8 5.5C6.622 5.5 5.5 6.621 5.5 8ZM12.833 3.7C12.833 3.99437 12.5944 4.233 12.3 4.233C12.0057 4.233 11.767 3.99437 11.767 3.7C11.767 3.40564 12.0057 3.167 12.3 3.167C12.5944 3.167 12.833 3.40564 12.833 3.7Z"
-                  fill="white" />
-              </svg>
-            </a>
+      <div class="relative">
+        <div class="card margin-auto-sides front">
+          <h3>Envíanos un mensaje</h3>
+          <p class="gutter-margin-bottom">Si tienes alguna pregunta o te gustaría saber algo más de
+            nosotros, nuestro equipo con gusto contestará tus preguntas.</p>
+          <form class="row flex-wrap full-width-percent half-gutter-margin-bottom">
+            <div class="col half-width-percent half-gutter-margin-bottom">
+              <label>Nombre</label>
+              <input type="text" class="col-4 half-gutter-margin-right" required="">
+            </div>
+            <div class="col half-width-percent half-gutter-margin-bottom">
+              <label>Email</label>
+              <input type="text" class="col-4" required="">
+            </div>
+            <div class="col half-width-percent half-gutter-margin-bottom">
+              <label>Escuela</label>
+              <input type="text" class="col-4 half-gutter-margin-right" required="">
+            </div>
+            <div class="col half-width-percent half-gutter-margin-bottom">
+              <label>Celular</label>
+              <input type="text" class="col-4 half-gutter-margin-bottom" required="">
+            </div class="col full-width-percent half-gutter-margin-bottom">
+            <label>Mensaje</label>
+            <textarea class="special-input body-text full-width-percent" rows="4" required=""></textarea>
+          </form>
+          <div class="button right" href="registro.html">
+            <a><text class="button-text block">Send</text></a>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
+
+    <footer>
+      <img src="img/Logo-White.svg" />
+      <div class="division-line full-width"></div>
+      <div class="row margin-auto center-horizontal">
+        <div class="row col-4 white margin-auto gutter-margin-bottom>
+            <a href=" ./" style="margin: auto">Inicio</a>
+          <a href="./faq.html" style="margin: auto">FAQ</a>
+          <a href="./committees.html" style="margin: auto">Comités</a>
+        </div>
+        <p class="col col-4 links white margin-auto gutter-margin-bottom  ">©2020 TECMUN</p>
+        <div class="social-icons row col-4 margin-auto">
+          <a>
+            <svg height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a>
+            <svg height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.5 1.75C3.5 2.7165 2.7165 3.5 1.75 3.5C0.783502 3.5 0 2.7165 0 1.75C0 0.783502 0.783502 0 1.75 0C2.7165 0 3.5 0.783502 3.5 1.75ZM0 5H3.578V16H0V5ZM13.2998 5.12119C13.2954 5.11973 13.2909 5.11825 13.2864 5.11678C13.2616 5.10856 13.2367 5.10033 13.21 5.093C13.162 5.082 13.114 5.073 13.065 5.065C12.875 5.027 12.667 5 12.423 5C10.337 5 9.014 6.517 8.578 7.103V5H5V16H8.578V10C8.578 10 11.282 6.234 12.423 9V16H16V8.577C16 6.915 14.861 5.53 13.324 5.129C13.3159 5.12643 13.3078 5.12382 13.2998 5.12119Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a>
+            <svg height="16" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 1.87231C15.405 2.13331 14.771 2.30631 14.11 2.39031C14.79 1.98431 15.309 1.34631 15.553 0.577313C14.919 0.955313 14.219 1.22231 13.473 1.37131C12.871 0.730313 12.013 0.333313 11.077 0.333313C9.261 0.333313 7.799 1.80731 7.799 3.61431C7.799 3.87431 7.821 4.12431 7.875 4.36231C5.148 4.22931 2.735 2.92231 1.114 0.931313C0.831 1.42231 0.665 1.98431 0.665 2.58931C0.665 3.72531 1.25 4.73231 2.122 5.31531C1.595 5.30531 1.078 5.15231 0.64 4.91131C0.64 4.92131 0.64 4.93431 0.64 4.94731C0.64 6.54131 1.777 7.86531 3.268 8.17031C3.001 8.24331 2.71 8.27831 2.408 8.27831C2.198 8.27831 1.986 8.26631 1.787 8.22231C2.212 9.52131 3.418 10.4763 4.852 10.5073C3.736 11.3803 2.319 11.9063 0.785 11.9063C0.516 11.9063 0.258 11.8943 0 11.8613C1.453 12.7983 3.175 13.3333 5.032 13.3333C11.068 13.3333 14.368 8.33331 14.368 3.99931C14.368 3.85431 14.363 3.71431 14.356 3.57531C15.007 3.11331 15.554 2.53631 16 1.87231Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a>
+            <svg height="16" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.456 0.758687C14.415 0.812687 14.886 0.954687 15.32 1.72669C15.772 2.49769 16 3.82569 16 6.16469V6.16769V6.17269C16 8.50069 15.772 9.83869 15.321 10.6017C14.887 11.3737 14.416 11.5137 13.457 11.5787C12.498 11.6337 10.089 11.6667 8.002 11.6667C5.911 11.6667 3.501 11.6337 2.543 11.5777C1.586 11.5127 1.115 11.3727 0.677 10.6007C0.23 9.83769 0 8.49969 0 6.17169V6.16969V6.16669V6.16369C0 3.82569 0.23 2.49769 0.677 1.72669C1.115 0.953687 1.587 0.812687 2.544 0.757687C3.501 0.693687 5.911 0.666687 8.002 0.666687C10.089 0.666687 12.498 0.693687 13.456 0.758687ZM11 6.16669L6 3.16669V9.16669L11 6.16669Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a>
+            <svg height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5 0H11C13.761 0 16 2.239 16 5V11C16 13.761 13.761 16 11 16H5C2.239 16 0 13.761 0 11V5C0 2.239 2.239 0 5 0ZM11 14.5C12.93 14.5 14.5 12.93 14.5 11V5C14.5 3.07 12.93 1.5 11 1.5H5C3.07 1.5 1.5 3.07 1.5 5V11C1.5 12.93 3.07 14.5 5 14.5H11ZM4 8C4 5.791 5.791 4 8 4C10.209 4 12 5.791 12 8C12 10.209 10.209 12 8 12C5.791 12 4 10.209 4 8ZM5.5 8C5.5 9.378 6.622 10.5 8 10.5C9.378 10.5 10.5 9.378 10.5 8C10.5 6.621 9.378 5.5 8 5.5C6.622 5.5 5.5 6.621 5.5 8ZM12.833 3.7C12.833 3.99437 12.5944 4.233 12.3 4.233C12.0057 4.233 11.767 3.99437 11.767 3.7C11.767 3.40564 12.0057 3.167 12.3 3.167C12.5944 3.167 12.833 3.40564 12.833 3.7Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 </body>
 
