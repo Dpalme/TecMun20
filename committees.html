@@ -7,26 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>TECMUN XXXIV - Committeess</title>
   <link rel="stylesheet" href="https://dpalme.github.io/Peoria/normalize.css">
-	<link rel="stylesheet" href="css/peoria.css">
-	<link rel="stylesheet" href="css/custom-styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/peoria.css">
+  <link rel="stylesheet" href="css/custom-styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
-  <header class="col-height fixed front-2">
-		<div class="container col-height">
-			<img src="img/Logo.svg" class="two columns half-gutter-padding-vertical" />
-			<div class="hamburger" onclick="document.querySelector('ul').classList.toggle('open');">
+  <header class="fixed front-2 gutter-height">
+		<div class="container">
+			<img class="absolute gutter-height" src="img/Logo.svg" />
+			<div class="hamburger one columns nine-offset"
+				onclick="document.querySelector('ul').classList.toggle('open');">
 				<div class="line"></div>
-				<div class="line"></div>
+				<div class="line line-margin"></div>
 				<div class="line"></div>
 			</div>
 		</div>
 
 		<ul class="nav-links" id="navLinks">
 			<div class="container">
-				<div class="col-margin-top mid-white">
+				<div class="quarter-screen-margin mid-white">
 					<li>
 						<a class="header-link main-title text-center" tabindex="0"
 							onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
@@ -56,201 +57,166 @@
 							onclick="navLinks.classList.toggle('open'); hamburger.classList.toggle('active'); document.querySelector('html').classList.remove('overflow-hidden');"
 							href="#Contacto">Contacto</a>
 					</li>
-				</div>
-
-				<div class="one-third column one-third-offset text-center">
-					<a class="block three columns gutter-margin-bottom">
-						<svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-							class="margin-auto-sides">
-							<path
-								d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"
-								fill="white" />
-						</svg>
-					</a>
-					<a class="block three columns gutter-margin-bottom">
-						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-							class="margin-auto-sides">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M3.5 1.75C3.5 2.7165 2.7165 3.5 1.75 3.5C0.783502 3.5 0 2.7165 0 1.75C0 0.783502 0.783502 0 1.75 0C2.7165 0 3.5 0.783502 3.5 1.75ZM0 5H3.578V16H0V5ZM13.2998 5.12119C13.2954 5.11973 13.2909 5.11825 13.2864 5.11678C13.2616 5.10856 13.2367 5.10033 13.21 5.093C13.162 5.082 13.114 5.073 13.065 5.065C12.875 5.027 12.667 5 12.423 5C10.337 5 9.014 6.517 8.578 7.103V5H5V16H8.578V10C8.578 10 11.282 6.234 12.423 9V16H16V8.577C16 6.915 14.861 5.53 13.324 5.129C13.3159 5.12643 13.3078 5.12382 13.2998 5.12119Z"
-								fill="white" />
-						</svg>
-					</a>
-					<a class="block three columns gutter-margin-bottom">
-						<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
-							class="margin-auto-sides">
-							<path
-								d="M16 1.87231C15.405 2.13331 14.771 2.30631 14.11 2.39031C14.79 1.98431 15.309 1.34631 15.553 0.577313C14.919 0.955313 14.219 1.22231 13.473 1.37131C12.871 0.730313 12.013 0.333313 11.077 0.333313C9.261 0.333313 7.799 1.80731 7.799 3.61431C7.799 3.87431 7.821 4.12431 7.875 4.36231C5.148 4.22931 2.735 2.92231 1.114 0.931313C0.831 1.42231 0.665 1.98431 0.665 2.58931C0.665 3.72531 1.25 4.73231 2.122 5.31531C1.595 5.30531 1.078 5.15231 0.64 4.91131C0.64 4.92131 0.64 4.93431 0.64 4.94731C0.64 6.54131 1.777 7.86531 3.268 8.17031C3.001 8.24331 2.71 8.27831 2.408 8.27831C2.198 8.27831 1.986 8.26631 1.787 8.22231C2.212 9.52131 3.418 10.4763 4.852 10.5073C3.736 11.3803 2.319 11.9063 0.785 11.9063C0.516 11.9063 0.258 11.8943 0 11.8613C1.453 12.7983 3.175 13.3333 5.032 13.3333C11.068 13.3333 14.368 8.33331 14.368 3.99931C14.368 3.85431 14.363 3.71431 14.356 3.57531C15.007 3.11331 15.554 2.53631 16 1.87231Z"
-								fill="white" />
-						</svg>
-					</a>
-					<a class="block three columns gutter-margin-bottom">
-						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-							class="margin-auto-sides">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M5 0H11C13.761 0 16 2.239 16 5V11C16 13.761 13.761 16 11 16H5C2.239 16 0 13.761 0 11V5C0 2.239 2.239 0 5 0ZM11 14.5C12.93 14.5 14.5 12.93 14.5 11V5C14.5 3.07 12.93 1.5 11 1.5H5C3.07 1.5 1.5 3.07 1.5 5V11C1.5 12.93 3.07 14.5 5 14.5H11ZM4 8C4 5.791 5.791 4 8 4C10.209 4 12 5.791 12 8C12 10.209 10.209 12 8 12C5.791 12 4 10.209 4 8ZM5.5 8C5.5 9.378 6.622 10.5 8 10.5C9.378 10.5 10.5 9.378 10.5 8C10.5 6.621 9.378 5.5 8 5.5C6.622 5.5 5.5 6.621 5.5 8ZM12.833 3.7C12.833 3.99437 12.5944 4.233 12.3 4.233C12.0057 4.233 11.767 3.99437 11.767 3.7C11.767 3.40564 12.0057 3.167 12.3 3.167C12.5944 3.167 12.833 3.40564 12.833 3.7Z"
-								fill="white" />
-						</svg>
-					</a>
+					<div class="one-third column one-third-offset text-center">
+						<a class="block four columns gutter-margin-bottom">
+							<svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+								class="margin-auto-sides">
+								<path d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"
+									fill="white" />
+							</svg>
+						</a>
+						<a class="block four columns gutter-margin-bottom">
+							<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+								class="margin-auto-sides">
+								<path
+									d="M16 1.87231C15.405 2.13331 14.771 2.30631 14.11 2.39031C14.79 1.98431 15.309 1.34631 15.553 0.577313C14.919 0.955313 14.219 1.22231 13.473 1.37131C12.871 0.730313 12.013 0.333313 11.077 0.333313C9.261 0.333313 7.799 1.80731 7.799 3.61431C7.799 3.87431 7.821 4.12431 7.875 4.36231C5.148 4.22931 2.735 2.92231 1.114 0.931313C0.831 1.42231 0.665 1.98431 0.665 2.58931C0.665 3.72531 1.25 4.73231 2.122 5.31531C1.595 5.30531 1.078 5.15231 0.64 4.91131C0.64 4.92131 0.64 4.93431 0.64 4.94731C0.64 6.54131 1.777 7.86531 3.268 8.17031C3.001 8.24331 2.71 8.27831 2.408 8.27831C2.198 8.27831 1.986 8.26631 1.787 8.22231C2.212 9.52131 3.418 10.4763 4.852 10.5073C3.736 11.3803 2.319 11.9063 0.785 11.9063C0.516 11.9063 0.258 11.8943 0 11.8613C1.453 12.7983 3.175 13.3333 5.032 13.3333C11.068 13.3333 14.368 8.33331 14.368 3.99931C14.368 3.85431 14.363 3.71431 14.356 3.57531C15.007 3.11331 15.554 2.53631 16 1.87231Z"
+									fill="white" />
+							</svg>
+						</a>
+						<a class="block four columns gutter-margin-bottom">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+								class="margin-auto-sides">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M5 0H11C13.761 0 16 2.239 16 5V11C16 13.761 13.761 16 11 16H5C2.239 16 0 13.761 0 11V5C0 2.239 2.239 0 5 0ZM11 14.5C12.93 14.5 14.5 12.93 14.5 11V5C14.5 3.07 12.93 1.5 11 1.5H5C3.07 1.5 1.5 3.07 1.5 5V11C1.5 12.93 3.07 14.5 5 14.5H11ZM4 8C4 5.791 5.791 4 8 4C10.209 4 12 5.791 12 8C12 10.209 10.209 12 8 12C5.791 12 4 10.209 4 8ZM5.5 8C5.5 9.378 6.622 10.5 8 10.5C9.378 10.5 10.5 9.378 10.5 8C10.5 6.621 9.378 5.5 8 5.5C6.622 5.5 5.5 6.621 5.5 8ZM12.833 3.7C12.833 3.99437 12.5944 4.233 12.3 4.233C12.0057 4.233 11.767 3.99437 11.767 3.7C11.767 3.40564 12.0057 3.167 12.3 3.167C12.5944 3.167 12.833 3.40564 12.833 3.7Z"
+									fill="white" />
+							</svg>
+						</a>
+					</div>
 				</div>
 			</div>
 		</ul>
 	</header>
-  
-  <div class="container-top-margin">
-    <h3 class="small-separator">Comités</h3>
-    <div class="row col-4">
-      <a class="margin-auto">AG</a>
-      <a class="margin-auto">ECOSOC</a>
-      <a class="margin-auto">AEOR</a>
-    </div>
-    <div class="division-line full-width"></div>
 
-    <div class="full column">
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> RANAG</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Reunión de Alto Nivel de la Asamblea General</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> PRIMERA</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Primera Comisión de Desarme y Seguridad Internacional</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> ACNUR</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Alto Comisionado de Naciones Unidas para los Refugiados</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> CNUC</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Convención de las Naciones Unidas contra la Corrupción</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> UNICEF</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Fondo de las Naciones Unidas para la Infancia</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> HTC</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Historical Trusteeship Council</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> UNESCO</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> CE</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">European Commission</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> FPANDS</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Foro Político de Alto Nivel sobre el Desarrollo Sostenible</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> INTERPOL</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Organisation Internationale de Police Criminelle</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> UN WOMEN</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Commission on the Status of Women</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> UNICRI</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">United Nations Interregional Crime and Justice Research Institute</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> OEA</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Organización de los Estados Americanos</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> BM</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Banco Mundial</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> NATO</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">North Atlantic Treaty Organization</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> CTC</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Counter-Terrorism Committee</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> SC</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">Security Council</p>
-        </div>
-      </div>
-      
-      <div class="three columns double-col-height blue-bg rounded relative">
-        <div class="container absolute-center full column">
-          <h4 class="white full column margin-none"> ICC</h4>
-          <div class="division-line mid-white-bg ten columns one-offset"></div>
-          <p class="white small-body full column margin-none">International Criminal Court</p>
-        </div>
-      </div>
-        
+  <div class="container-top-margin">
+    <div class="full column margin-none">
+      <h3>Comités</h3>
     </div>
-  </div>
+    <div class="full column margin-none">
+      <div class="one-third column one-third-offset text-center">
+        <a class="margin-auto">AG</a>
+        <a class="margin-auto">ECOSOC</a>
+        <a class="margin-auto">AEOR</a>
+      </div>
+    </div>
+    <div class="full column margin-none">
+      <div class="division-line twelve columns"></div>
+    </div>
+    <div class="full column margin-none">
+      <div class="one-third column two-thirds-offset text-right gutter-margin-bottom">
+        <a class="margin-auto">EN</a>
+        <a class="margin-auto">ES</a>
+        <a class="margin-auto">FR</a>
+      </div>
+    </div>
+    <div class="full column margin-none">
+      <div class="twelve columns text-center">
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> RANAG</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Reunión de Alto Nivel de la Asamblea General</p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> PRIMERA</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Primera Comisión de Desarme y Seguridad Internacional
+            </p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> ACNUR</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Alto Comisionado de Naciones Unidas para los Refugiados
+            </p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> CNUC</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Convención de las Naciones Unidas contra la Corrupción
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="twelve columns text-center mobile-hide">
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> UNICEF</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Fondo de las Naciones Unidas para la Infancia</p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> HTC</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Historical Trusteeship Council</p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> UNESCO</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Organización de las Naciones Unidas para la Educación,
+              la
+              Ciencia y la Cultura</p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> CE</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">European Commission</p>
+          </div>
+        </div>
+      </div>
+      <div class="twelve columns text-center mobile-hide tablet-hide">
+        <div class="three columns double-col-height blue-bg rounded relative  gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> FPANDS</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Foro Político de Alto Nivel sobre el Desarrollo
+              Sostenible
+            </p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> INTERPOL</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Organisation Internationale de Police Criminelle</p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> UN WOMEN</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">Commission on the Status of Women</p>
+          </div>
+        </div>
+
+        <div class="three columns double-col-height blue-bg rounded relative gutter-margin-top">
+          <div class="container absolute-center full column">
+            <h4 class="white full column"> UNICRI</h4>
+            <div class="division-line mid-white-bg one-third column one-third-offset"></div>
+            <p class="white small-body full column margin-none half-gutter-padding">United Nations Interregional Crime and Justice Research
+              Institute</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
+
 </html>

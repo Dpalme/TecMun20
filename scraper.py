@@ -1,5 +1,5 @@
 # encoding=UTF-8
-import pyperclip, pprint
+import pyperclip
 
 cadena_final = ""
 with open("committees.txt", "r", encoding="UTF-8") as archivo:
@@ -18,5 +18,4 @@ with open("committees.txt", "r", encoding="UTF-8") as archivo:
       </div>
       """ % (abreviation, name)
 
-pprint.pprint(cadena_final)
 pyperclip.copy(cadena_final)
