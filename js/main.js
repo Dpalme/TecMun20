@@ -1,8 +1,5 @@
 $( document ).ready(function() {
-  // Get started!
-  console.log('Hello World!');
   navBarScroll();
-
 });
 
 function navBarScroll() {

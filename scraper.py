@@ -9,13 +9,11 @@ with open("committees.txt", "r", encoding="UTF-8") as archivo:
     else:
       name, abreviation, idioma = line.split(";")
       cadena_final += """
-      <div class="flex-item relative">
-        <div class="committee green-bg relative">
-          <div class="absolute-centered full-width-percent">
-            <h4 class="white full-width-percent">%s</h4>
-            <div class="division-line mid-white-bg"></div>
-            <p class="white small-body">%s</p>
-          </div>
+      <div class="three columns double-col-height blue-bg rounded relative">
+        <div class="container absolute-center full column">
+          <h4 class="white full column margin-none">%s</h4>
+          <div class="division-line mid-white-bg ten columns one-offset"></div>
+          <p class="white small-body full column margin-none">%s</p>
         </div>
       </div>
       """ % (abreviation, name)
