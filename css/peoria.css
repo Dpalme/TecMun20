@@ -319,7 +319,7 @@ b 													{ color: var(--black); }
 .container,
 .container-top-margin {
   position: relative;
-  width: 100%;
+  width: 95%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
